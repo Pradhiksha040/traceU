@@ -1,0 +1,542 @@
+<!-- ========================= DIRECTORSHIP-CHECK.HTML ========================= -->
+
+{% extends 'landing-layout.html' %}
+{% load static %}
+{% block icon %}
+<link rel="shortcut icon"
+      href="{% static 'img/icons/favicon.png' %}"
+      type="image/x-icon">
+{% endblock icon %}
+{% block title %}
+Directorship Check | TraceU
+{% endblock %}
+
+{% block page_content %}
+
+<!-- HERO -->
+<section class="passport-hero">
+
+    <div class="hero-blur blur1"></div>
+    <div class="hero-blur blur2"></div>
+
+    <div class="container">
+
+        <div class="passport-hero-wrapper">
+
+            <div class="passport-hero-content">
+
+                <span class="hero-tag">
+                    Choose Leaders with Integrity
+                </span>
+
+                <h1>
+                    Reliable Directorship Check for Executive Hiring
+                </h1>
+
+                <p>
+                    Verify current and past company directorships,
+                    board memberships, and regulatory records to
+                    hire trustworthy leaders with confidence.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="/contact/" class="primary-btn">
+                        Contact Us
+                    </a>
+
+                    <a href="#directorship-process" class="secondary-btn">
+                        See How It Works
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="passport-hero-image">
+
+                <img
+                    src="{% static 'img/address/dashboard.png' %}"
+                    alt="Directorship Verification"
+                >
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- VIDEO -->
+{% include 'partials/marquee.html' %}
+
+
+<!-- FEATURES -->
+<section class="why-section">
+
+    <div class="container">
+
+        <div class="section-heading center">
+
+            <span>Importance of Directorship Check</span>
+
+            <h2>
+                Prevent Executive Hiring Risks
+            </h2>
+
+        </div>
+
+        <div class="why-grid">
+
+            <div class="why-card">
+
+                <img
+                    src="{% static 'img/address/secure.png' %}"
+                    class="card-icon"
+                >
+
+                <h3>Conflict Detection</h3>
+
+                <p>
+                    Identify undisclosed affiliations and overlapping directorships.
+                </p>
+
+            </div>
+
+            <div class="why-card">
+
+                <img
+                    src="{% static 'img/address/report.png' %}"
+                    class="card-icon"
+                >
+
+                <h3>Protect Brand Reputation</h3>
+
+                <p>
+                    Avoid leaders associated with fraudulent or unethical companies.
+                </p>
+
+            </div>
+
+            <div class="why-card">
+
+                <img
+                    src="{% static 'img/address/verification.png' %}"
+                    class="card-icon"
+                >
+
+                <h3>Regulatory Compliance</h3>
+
+                <p>
+                    Ensure candidates comply with corporate and legal obligations.
+                </p>
+
+            </div>
+
+            <div class="why-card">
+
+                <img
+                    src="{% static 'img/address/employment.png' %}"
+                    class="card-icon"
+                >
+
+                <h3>Prevent Moonlighting</h3>
+
+                <p>
+                    Detect hidden business activities or freelance engagements.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PROCESS -->
+<section class="process-section" id="directorship-process">
+
+    <div class="container">
+
+        <div class="section-heading center">
+
+            <span>Easy onboarding</span>
+
+            <h2>
+                Three Simple Steps to Get Started
+            </h2>
+
+        </div>
+
+        <div class="process-grid">
+
+            <div class="process-card">
+
+                <div class="step-number">01</div>
+
+                <h3>Request Verification</h3>
+
+                <p>
+                    Initiate directorship verification for selected candidates.
+                </p>
+
+            </div>
+
+            <div class="process-card">
+
+                <div class="step-number">02</div>
+
+                <h3>Run Thorough Check</h3>
+
+                <p>
+                    Our team validates records across trusted corporate databases.
+                </p>
+
+            </div>
+
+            <div class="process-card">
+
+                <div class="step-number">03</div>
+
+                <h3>Download Report</h3>
+
+                <p>
+                    Access a detailed verification report with findings and alerts.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+
+    <div class="container">
+
+        <div class="cta-box">
+
+            <h2>
+                Hire Leaders with Proven Integrity
+            </h2>
+
+            <p>
+                Reduce executive hiring risks with comprehensive
+                directorship verification solutions.
+            </p>
+
+            <div class="cta-form">
+
+                <input
+                    type="email"
+                    placeholder="Enter your work email"
+                >
+
+                <button>
+                    Contact Us
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<style>
+
+:root{
+    --primary:#530ef0;
+    --black:#111111;
+    --white:#ffffff;
+    --light:#f8fafc;
+    --text:#6b7280;
+}
+
+.passport-hero{
+    padding:140px 0 110px;
+    background:linear-gradient(135deg,#111111,#530ef0);
+    color:white;
+    position:relative;
+    overflow:hidden;
+}
+
+.hero-blur{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(100px);
+    opacity:0.35;
+}
+
+.blur1{
+    width:300px;
+    height:300px;
+    background:#7c3aed;
+    top:-100px;
+    left:-100px;
+}
+
+.blur2{
+    width:280px;
+    height:280px;
+    background:#530ef0;
+    bottom:-80px;
+    right:-80px;
+}
+
+.passport-hero-wrapper{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:70px;
+}
+
+.hero-tag{
+    display:inline-block;
+    padding:10px 20px;
+    background:rgba(255,255,255,0.12);
+    border-radius:50px;
+    margin-bottom:25px;
+    font-size:14px;
+    font-weight:600;
+}
+
+.passport-hero h1{
+    font-size:58px;
+    line-height:1.15;
+    font-weight:800;
+}
+
+.passport-hero p{
+    margin-top:28px;
+    color:#e5e7eb;
+    font-size:18px;
+    line-height:1.9;
+}
+
+.passport-hero-image img{
+    width:100%;
+}
+
+.hero-buttons{
+    margin-top:40px;
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+.primary-btn,
+.secondary-btn{
+    padding:16px 34px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:700;
+}
+
+.primary-btn{
+    background:white;
+    color:#530ef0;
+}
+
+.secondary-btn{
+    border:2px solid white;
+    color:white;
+}
+
+.section-heading{
+    margin-bottom:60px;
+    text-align:center;
+}
+
+.section-heading h2{
+    font-size:48px;
+    margin-top:15px;
+}
+
+.trusted-section,
+.why-section,
+.process-section,
+.cta-section{
+    padding:100px 0;
+}
+
+.why-grid,
+.process-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.why-card,
+.process-card{
+    background:white;
+    border-radius:24px;
+    padding:35px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.05);
+    text-align:center;
+}
+
+.card-icon{
+    width:75px;
+    margin-bottom:22px;
+}
+
+.step-number{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#530ef0;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:800;
+    margin:0 auto 20px;
+}
+
+.cta-box{
+    background:linear-gradient(135deg,#111111,#530ef0);
+    color:white;
+    border-radius:30px;
+    padding:70px;
+    text-align:center;
+}
+
+.cta-form{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-top:40px;
+    flex-wrap:wrap;
+}
+
+.cta-form input{
+    width:380px;
+    padding:18px 22px;
+    border:none;
+    border-radius:50px;
+}
+
+.cta-form button{
+    padding:18px 32px;
+    border:none;
+    border-radius:50px;
+    background:white;
+    color:#530ef0;
+    font-weight:700;
+}
+
+.video-strip-section{
+    width:100%;
+    overflow:hidden;
+}
+
+.running-video{
+    width:100%;
+    display:block;
+}
+
+@media(max-width:992px){
+
+    .passport-hero-wrapper{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .passport-hero h1{
+        font-size:42px;
+    }
+
+}
+@media(max-width:768px){
+
+    /* Section headings */
+    .section-heading h2{
+        font-size:22px;
+        line-height:1.3;
+    }
+
+    /* Feature & process grids */
+    .why-grid,
+    .process-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:12px;
+    }
+
+    /* Cards */
+    .why-card,
+    .process-card{
+        padding:15px;
+        border-radius:16px;
+    }
+
+    /* Icons */
+    .card-icon{
+        width:40px;
+        margin-bottom:10px;
+    }
+
+    /* Card titles */
+    .why-card h3,
+    .process-card h3{
+        font-size:14px;
+        line-height:1.3;
+        margin:8px 0;
+    }
+
+    /* Card descriptions */
+    .why-card p,
+    .process-card p{
+        font-size:11px;
+        line-height:1.5;
+        margin:0;
+    }
+
+    /* Step circles */
+    .step-number{
+        width:40px;
+        height:40px;
+        font-size:14px;
+        margin:0 auto 10px;
+    }
+
+    /* CTA section */
+    .cta-box{
+        padding:40px 20px;
+    }
+
+    .cta-form{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .cta-form input,
+    .cta-form button{
+        width:100%;
+        max-width:100%;
+    }
+}
+.secondary-btn{
+    border:1px solid rgba(255,255,255,0.4);
+    color:white;
+    padding:16px 36px;
+    border-radius:14px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s ease; 
+}
+
+.secondary-btn:hover{
+    color: rgb(65, 225, 86);
+    border-color: rgb(65, 225, 86);
+}
+</style>
+
+{% endblock %}

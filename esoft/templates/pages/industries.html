@@ -1,0 +1,590 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}TraceU - Services{% endblock %}
+{% block icon %}
+<link rel="shortcut icon" href="{% static 'img/icons/favicon.png' %}" type="image/x-icon">
+{% endblock icon %}
+{% block content %}
+
+<style>
+
+/* ================= GLOBAL ================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    overflow-x:hidden;
+    background:#f7f8fc;
+    color:#111;
+}
+
+/* ================= HERO ================= */
+
+.service-hero{
+    background:linear-gradient(135deg,#6a00ff,#3b00db);
+    min-height:550px;
+    position:relative;
+    overflow:hidden;
+    color:#fff;
+    padding-top:130px;
+}
+
+.service-hero::before{
+    content:'';
+    position:absolute;
+    width:600px;
+    height:600px;
+    background:rgba(255,255,255,0.08);
+    border-radius:40%;
+    top:80px;
+    left:-180px;
+    transform:rotate(25deg);
+}
+
+/* ================= HERO CONTENT ================= */
+
+.hero-content{
+    position:relative;
+    z-index:10;
+    padding:80px 0 100px;
+}
+
+.hero-title{
+    font-size:58px;
+    line-height:74px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.hero-text{
+    font-size:20px;
+    line-height:34px;
+    max-width:750px;
+    color:#f1f1f1;
+    margin-bottom:35px;
+}
+
+.breadcrumb-box{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:18px;
+    font-weight:500;
+}
+
+.breadcrumb-box a{
+    color:#fff;
+    text-decoration:none;
+}
+
+.breadcrumb-box span{
+    color:#d7d7d7;
+}
+
+/* ================= COMMON ================= */
+
+.section-padding{
+    padding:90px 0;
+}
+
+.section-title{
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:18px;
+    color:#111;
+}
+
+.section-text{
+    color:#666;
+    font-size:18px;
+    line-height:32px;
+}
+
+/* ================= SERVICE CARDS ================= */
+
+.service-card{
+    background:#fff;
+    padding:35px 28px;
+    border-radius:22px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.06);
+    transition:0.4s;
+    height:100%;
+    margin-bottom:30px;
+    border:1px solid #eee;
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 18px 45px rgba(0,0,0,0.1);
+}
+
+.service-card h3{
+    font-size:24px;
+    margin-bottom:15px;
+    font-weight:700;
+}
+
+.service-card p{
+    color:#666;
+    line-height:30px;
+    font-size:16px;
+}
+
+/* ================= PROCESS ================= */
+
+.process-section{
+    background:#fff;
+    border-radius:30px;
+    padding:70px 50px;
+    box-shadow:0 10px 35px rgba(0,0,0,0.06);
+    text-align:center;
+}
+
+.process-section h2{
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.process-section p{
+    color:#666;
+    font-size:18px;
+    line-height:32px;
+}
+
+/* ================= PRICING ================= */
+
+.price-card{
+    background:#fff;
+    border-radius:24px;
+    padding:45px 35px;
+    text-align:center;
+    box-shadow:0 10px 40px rgba(0,0,0,0.06);
+    transition:0.4s;
+    margin-bottom:30px;
+}
+
+.price-card:hover{
+    transform:translateY(-10px);
+}
+
+.popular{
+    border:2px solid #5b16ff;
+}
+
+.popular-tag{
+    background:#5b16ff;
+    color:#fff;
+    padding:8px 18px;
+    border-radius:30px;
+    display:inline-block;
+    margin-bottom:18px;
+    font-size:14px;
+    font-weight:600;
+}
+
+.price-title{
+    font-size:30px;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.price-list{
+    list-style:none;
+    padding:0;
+    margin:25px 0;
+}
+
+.price-list li{
+    margin-bottom:14px;
+    color:#555;
+    font-size:16px;
+}
+
+.price-btn{
+    background:#5b16ff;
+    color:#fff;
+    text-decoration:none;
+    padding:14px 30px;
+    border-radius:40px;
+    display:inline-block;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.price-btn:hover{
+    background:#4511cc;
+}
+
+/* ================= CTA ================= */
+
+.cta-section{
+    background:linear-gradient(135deg,#6a00ff,#3b00db);
+    color:#fff;
+    text-align:center;
+    padding:80px 40px;
+    border-radius:30px;
+}
+
+.cta-section h2{
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:18px;
+}
+
+.cta-section p{
+    font-size:18px;
+    margin-bottom:30px;
+    line-height:32px;
+}
+
+.cta-input{
+    width:380px;
+    max-width:100%;
+    border:none;
+    padding:16px;
+    border-radius:40px;
+    margin-right:10px;
+    outline:none;
+}
+
+.cta-btn{
+    border:none;
+    background:#fff;
+    color:#5b16ff;
+    padding:16px 30px;
+    border-radius:40px;
+    font-weight:700;
+    transition:0.3s;
+}
+
+.cta-btn:hover{
+    transform:translateY(-3px);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:991px){
+
+    .hero-title{
+        font-size:42px;
+        line-height:58px;
+    }
+
+    .hero-text{
+        font-size:17px;
+        line-height:30px;
+    }
+
+    .section-title{
+        font-size:34px;
+    }
+
+    .cta-section h2{
+        font-size:34px;
+    }
+
+}
+
+</style>
+
+<!-- ================= NAVBAR ================= -->
+
+{% include 'partials/navbar.html' %}
+
+<!-- ================= HERO ================= -->
+
+<div class="service-hero">
+
+    <div class="container hero-content">
+
+        <h1 class="hero-title">
+            Background Verification Services
+        </h1>
+
+        <p class="hero-text">
+            Reliable, fast, and secure verification solutions to help you hire with confidence and reduce risks.
+        </p>
+
+        <div class="breadcrumb-box">
+
+            <a href="/">Home</a>
+
+            <span>›</span>
+
+            <span>Services</span>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ================= SERVICES ================= -->
+
+<div class="container section-padding">
+
+    <div class="text-center mb-5">
+
+        <h2 class="section-title">
+            Comprehensive Background Verification Services
+        </h2>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-lg-4">
+            <div class="service-card">
+                <h3>ID Verification</h3>
+                <p>
+                    Verify identity using government-issued documents with high accuracy.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="service-card">
+                <h3>Address Verification</h3>
+                <p>
+                    Confirm candidate address through reliable verification methods.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="service-card">
+                <h3>Employment Verification</h3>
+                <p>
+                    Validate previous work experience, roles, and employment history.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="service-card">
+                <h3>Education Verification</h3>
+                <p>
+                    Verify academic qualifications and certifications from institutions.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="service-card">
+                <h3>Court Records Verification</h3>
+                <p>
+                    Identify legal risks by checking court and criminal records.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="service-card">
+                <h3>Reference Check</h3>
+                <p>
+                    Gather feedback from previous employers or references.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="service-card">
+                <h3>Global Database Check</h3>
+                <p>
+                    Screen candidates against global watchlists and databases.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="service-card">
+                <h3>Passport Verification</h3>
+                <p>
+                    Validate passport details for international verification needs.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="service-card">
+                <h3>DIN Verification</h3>
+                <p>
+                    Verify Director Identification Number for corporate compliance.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ================= PROCESS ================= -->
+
+<div class="container section-padding">
+
+    <div class="process-section">
+
+        <h2>
+            Simple & Efficient Verification Process
+        </h2>
+
+        <p>
+            Verification Packages → Choose the right verification bundle for your hiring needs
+        </p>
+
+    </div>
+
+</div>
+
+<!-- ================= PRICING ================= -->
+
+<div class="section-padding bg-light">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-3">
+
+                <div class="price-card">
+
+                    <h3 class="price-title">
+                        Basic
+                    </h3>
+
+                    <ul class="price-list">
+                        <li>✔ ID Verification</li>
+                        <li>✔ Address Verification</li>
+                    </ul>
+
+                    <a href="#" class="price-btn">
+                        Get Started
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3">
+
+                <div class="price-card popular">
+
+                    <div class="popular-tag">
+                        Most Popular
+                    </div>
+
+                    <h3 class="price-title">
+                        Standard
+                    </h3>
+
+                    <ul class="price-list">
+                        <li>✔ ID + Address</li>
+                        <li>✔ Employment</li>
+                        <li>✔ Education</li>
+                    </ul>
+
+                    <a href="#" class="price-btn">
+                        Choose Plan
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3">
+
+                <div class="price-card">
+
+                    <h3 class="price-title">
+                        Advanced
+                    </h3>
+
+                    <ul class="price-list">
+                        <li>✔ All Standard</li>
+                        <li>✔ Court Records</li>
+                        <li>✔ Reference Check</li>
+                    </ul>
+
+                    <a href="#" class="price-btn">
+                        Get Started
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3">
+
+                <div class="price-card">
+
+                    <h3 class="price-title">
+                        Enterprise
+                    </h3>
+
+                    <ul class="price-list">
+                        <li>✔ All Services</li>
+                        <li>✔ Global DB</li>
+                        <li>✔ Passport & DIN</li>
+                    </ul>
+
+                    <a href="#" class="price-btn">
+                        Contact Sales
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ================= CTA ================= -->
+
+<div class="container section-padding">
+
+    <div class="cta-section">
+
+        <h2>
+            Start Verifying Candidates Today
+        </h2>
+
+        <p>
+            Make smarter hiring decisions with fast, accurate, and secure background verification.
+            Get started now or request a free demo to see how our platform works.
+        </p>
+
+        <form>
+
+            <input type="email"
+                   class="cta-input"
+                   placeholder="Enter your work email">
+
+            <button class="cta-btn">
+                Request Demo
+            </button>
+
+        </form>
+
+        <p class="mt-4">
+            No spam. No commitment. Just a quick demo to get you started.
+        </p>
+
+    </div>
+
+</div>
+
+<!-- ================= FOOTER ================= -->
+
+{% include 'partials/footer.html' %}
+
+{% endblock %}

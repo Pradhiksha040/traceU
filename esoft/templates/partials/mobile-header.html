@@ -1,0 +1,232 @@
+{% load static i18n %}
+
+<!--===== MOBILE HEADER START =======-->
+
+<div class="mobile-header d-block d-lg-none">
+    <div class="container-fluid">
+
+        <div class="mobile-header-elements">
+
+            <!-- LOGO LEFT -->
+
+            <div class="mobile-logo">
+                <a href="/">
+                    <img src="{% static 'img/logo/logo_white.png' %}"
+                         alt="TraceU"
+                         style="height:40px;">
+                </a>
+            </div>
+
+            <!-- HAMBURGER RIGHT -->
+
+            <div class="mobile-nav-icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!--===== MOBILE SIDEBAR =======-->
+
+<div class="mobile-sidebar d-block d-lg-none">
+
+    <!-- LOGO -->
+
+    <div class="logo-m">
+
+        <a href="/">
+            <img src="{% static 'img/logo/logo_white.png' %}"
+                 alt="TraceU"
+                 style="height:45px;">
+        </a>
+
+    </div>
+
+    <!-- CLOSE -->
+
+    <div class="menu-close">
+        <i class="fa-solid fa-xmark"></i>
+    </div>
+
+    <!-- MENU -->
+
+    <div class="mobile-nav">
+
+        <ul>
+
+            <li>
+                <a href="/">Home</a>
+            </li>
+
+            <!-- SERVICES -->
+
+            <li class="has-dropdown">
+
+                <a href="#">
+                    Services
+                </a>
+
+                <ul class="sub-menu">
+
+                    <li>
+                        <a href="{% url 'pages:dynamic_pages' 'verification-services' %}">
+                            Verification Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="{% url 'pages:dynamic_pages' 'id-verification' %}">
+                            ID Verification
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="{% url 'pages:dynamic_pages' 'employment-verification' %}">
+                            Employment Verification
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="{% url 'pages:dynamic_pages' 'education-verification' %}">
+                            Education Verification
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="{% url 'pages:dynamic_pages' 'court-check' %}">
+                            Court Check
+                        </a>
+                    </li>
+
+                </ul>
+
+            </li>
+
+            <li>
+                <a href="{% url 'pages:dynamic_pages' 'about' %}">
+                    About Us
+                </a>
+            </li>
+
+            <li>
+                <a href="{% url 'pages:dynamic_pages' 'contact' %}">
+                    Contact Us
+                </a>
+            </li>
+
+        </ul>
+
+        <!-- CTA -->
+
+        <a href="{% url 'pages:dynamic_pages' 'schedule-demo' %}"
+           class="theme-btn3"
+           style="width:100%; text-align:center; margin-top:20px;">
+            Schedule Demo
+        </a>
+
+        <!-- CONTACT -->
+
+        <div class="contact-infos">
+
+            <h3>Contact Info</h3>
+
+            <div class="box">
+
+                <div class="icon">
+                    <span>
+                        <i class="fa-solid fa-phone"></i>
+                    </span>
+                </div>
+
+                <div class="pera">
+                    <a href="tel:+919363608990">
+                        +91 93636 08990
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="box">
+
+                <div class="icon">
+                    <span>
+                        <i class="fa-solid fa-envelope"></i>
+                    </span>
+                </div>
+
+                <div class="pera">
+                    <a href="mailto:info@prajai.com">
+                        info@prajai.com
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- LOCATION -->
+
+        <div class="contact-infos">
+
+            <h3>Our Location</h3>
+
+            <div class="box">
+
+                <div class="icon">
+                    <span>
+                        <i class="fa-solid fa-location-dot"></i>
+                    </span>
+                </div>
+
+                <div class="pera">
+                    Coimbatore,<br>
+                    Tamil Nadu, India
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- SOCIAL -->
+
+        <div class="contact-infos">
+
+            <h3>Follow Us</h3>
+
+            <ul class="icon-list">
+
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!--===== MOBILE HEADER END =======-->  

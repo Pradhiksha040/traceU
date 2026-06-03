@@ -1,0 +1,846 @@
+{% extends 'landing-layout.html' %}
+{% load static i18n %}
+
+{% block title %}About TraceU{% endblock title %}
+
+{% block icon %}
+<link rel="shortcut icon" href="{% static 'img/icons/favicon.png' %}" type="image/x-icon">
+{% endblock icon %}
+
+{% block body_attribute %}class="body2 body"{% endblock body_attribute %}
+
+{% block page_content %}
+
+<!-- =========================
+     HERO SECTION
+========================= -->
+<section class="pages-hero">
+    <div class="container">
+        <div class="row align-items-center justify-content-between g-5">
+
+            <div class="col-lg-6 col-md-12">
+                <div class="main-headding">
+
+                    <span class="hero-tag">
+                        Trusted Background Verification Platform
+                    </span>
+
+<h1 style="color: #ffffff;">About TraceU</h1>
+
+<p style="color: #f1f5f9;">
+    We provide fast, secure, and reliable background verification
+    solutions to help businesses hire with confidence.
+</p>
+
+                    <div class="space30"></div>
+
+                    <div class="hero-btns">
+
+                        <a href="{% url 'pages:dynamic_pages' 'contact' %}" class="info-btn">
+                            Get A Quote
+                        </a>
+
+                        <a href="{% url 'pages:dynamic_pages' 'contact' %}" class="info-btn">
+                            Request Demo
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12 overflow-hidden">
+              <div class="hero-image text-center">
+                <img
+                  src="{% static 'img/about/about1.jpg' %}"
+                  alt="About TraceU"
+                  class="hero-main-img img-fluid"
+                >
+              </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+{% include 'partials/marquee.html' %}
+
+<!-- =========================
+     STATS SECTION
+========================= -->
+<section class="about-boxs">
+    <div class="container">
+
+        <div class="row g-4">
+
+            <div class="col-lg-3 col-md-6">
+                <div class="single-box">
+                    <h2>500+</h2>
+                    <p>Companies Served</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="single-box">
+                    <h2 style="height: auto;">10,000+ </h2>
+                    <p>Verifications Completed</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="single-box">
+                    <h2>98%</h2>
+                    <p>Accuracy Rate</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="single-box">
+                    <h2>48h</h2>
+                    <p>Avg Turnaround</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- =========================
+     STORY SECTION
+========================= -->
+<section class="about-page-area1">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6">
+                <div class="about-img">
+
+<img
+    src="{% static 'img/about/about2.jpg' %}"
+    alt="Our Story"
+    class="story-img"
+    style="height:450px; width:100%; object-fit:contain; display:block; margin:auto;"
+>
+
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+
+                <div class="headding2">
+
+                    <span class="section-subtitle">
+                        Our Journey
+                    </span>
+
+                    <h2>
+                        Building Trust Through Smarter Verification
+                    </h2>
+
+                    <p>
+                        TraceU was built with a clear vision — to make hiring safer,
+                        faster, and more reliable. In today’s competitive environment,
+                        verifying candidate information accurately is essential for
+                        making confident hiring decisions.
+                    </p>
+
+                    <p>
+                        Our platform combines advanced technology with trusted data
+                        sources to deliver seamless background verification services.
+                        From identity and employment checks to education and compliance
+                        verification, we help businesses reduce risks and build
+                        trustworthy teams.
+                    </p>
+
+                    <div class="space30"></div>
+
+                    <a href="{% url 'pages:dynamic_pages' 'contact' %}" class="theme-btn-dark">
+                        Learn More
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     PROCESS SECTION
+========================= -->
+<section class="process-section">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-8 mx-auto text-center">
+
+                <div class="headding2">
+
+                    <span class="section-subtitle">
+                        Verification Workflow
+                    </span>
+
+                    <h2>
+                        Watch Our Verification Process
+                    </h2>
+
+                    <p>
+                        Discover how TraceU streamlines background verification —
+                        from submitting candidate details to delivering accurate
+                        and reliable reports.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="space50"></div>
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6">
+
+                <div class="left-image">
+
+<img
+    src="{% static 'img/about/abt3.jpeg' %}"
+    alt="Verification Process"
+    class="process-main-img"
+    style="height:450px; width:100%; object-fit:cover;"
+/>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <div class="custom-box-wrapper">
+
+                    <div class="single-box">
+                        <h4>Identity Verification</h4>
+                        <p>
+                            Secure validation of candidate identity using trusted
+                            government and official data sources.
+                        </p>
+                    </div>
+
+                    <div class="single-box">
+                        <h4>Employment Verification</h4>
+                        <p>
+                            Verify previous employment history quickly and accurately
+                            through authorized channels.
+                        </p>
+                    </div>
+
+                    <div class="single-box">
+                        <h4>Education Verification</h4>
+                        <p>
+                            Confirm academic qualifications and certifications from
+                            verified institutions.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     CTA SECTION
+========================= -->
+<section class="email-innovation">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-7">
+
+                <div class="headding2-w">
+
+                    <h2>
+                        Start Verifying Candidates Today
+                    </h2>
+
+                    <p>
+                        Make smarter hiring decisions with fast, accurate,
+                        and secure background verification.
+                        Get started now or request a free demo.
+                    </p>
+
+                    <div class="space30"></div>
+
+                    <a href="{% url 'pages:dynamic_pages' 'contact' %}" class="theme-btn2">
+                        Request Demo
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-5">
+
+                <div class="images text-center">
+
+                    <img
+                        src="{% static 'img/about/abt1.jpeg' %}"
+                        alt="Verification"
+                        class="cta-main-img"
+                    >
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     TRUST SECTION
+========================= -->
+
+
+<style>
+/* ==========================================
+   GLOBAL
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    overflow-x:hidden;
+    background:#f8fafc;
+    color:#111827;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+    transition:.3s;
+}
+
+.space30{
+    height:30px;
+}
+
+.space50{
+    height:50px;
+}
+
+/* ==========================================
+   HERO SECTION
+========================================== */
+
+.pages-hero{
+    background:linear-gradient(
+        135deg,
+        #0f172a 0%,
+        #1e3a8a 50%,
+        #2563eb 100%
+    );
+    padding:110px 0;
+    position:relative;
+    overflow:hidden;
+}
+
+.pages-hero::before{
+    content:'';
+    position:absolute;
+    width:550px;
+    height:550px;
+    background:rgba(255,255,255,0.08);
+    border-radius:50%;
+    top:-180px;
+    right:-120px;
+}
+
+.pages-hero::after{
+    content:'';
+    position:absolute;
+    width:420px;
+    height:420px;
+    background:rgba(255,255,255,0.05);
+    border-radius:50%;
+    bottom:-180px;
+    left:-120px;
+}
+
+.main-headding{
+    position:relative;
+    z-index:2;
+}
+
+.hero-tag{
+    display:inline-block;
+    padding:12px 24px;
+    background:rgba(255,255,255,0.12);
+    border-radius:40px;
+    backdrop-filter:blur(10px);
+    color:#dbeafe;
+    font-size:15px;
+    font-weight:600;
+    margin-bottom:25px;
+}
+
+.main-headding h1{
+    font-size:64px;
+    line-height:1.1;
+    font-weight:700;
+    margin-bottom:25px;
+    color:#fff;
+}
+
+.main-headding p{
+    color:#dbeafe;
+    font-size:20px;
+    line-height:1.9;
+    max-width:650px;
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.info-btn{
+    background:#2563eb;
+    color:#fff;
+    text-decoration:none;
+    padding:16px 34px;
+    border-radius:14px;
+    display:inline-block;
+    font-weight:700;
+    transition:0.3s;
+}
+
+.info-btn:hover{
+    background:rgb(65, 225, 86);
+    transform:translateY(-3px);
+}
+/* ==========================================
+   HERO IMAGE
+========================================== */
+
+.hero-image{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero-main-img{
+    width:100%;
+    height:520px;
+    object-fit:cover;
+    border-radius:28px;
+    box-shadow:0 25px 60px rgba(0,0,0,.28);
+}
+
+.hero-main-img:hover{
+    transform:scale(1.02);
+}
+
+/* ==========================================
+   STATS
+========================================== */
+
+.about-boxs{
+    padding:110px 0;
+    background:#f8fafc;
+}
+
+.about-boxs .single-box{
+    background:#fff;
+    border-radius:20px;
+    padding:40px 25px;
+    min-height:220px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+    border:1px solid #e5e7eb;
+    box-shadow:0 8px 20px rgba(0,0,0,.05);
+    transition:.3s;
+}
+
+.about-boxs .single-box:hover{
+    transform:translateY(-10px);
+    box-shadow:0 18px 45px rgba(37,99,235,.12);
+}
+
+.about-boxs h2{
+    font-size:48px;
+    color:#2563eb;
+    margin-bottom:12px;
+    font-weight:700;
+}
+
+.about-boxs p{
+    color:#6b7280;
+    margin:0;
+}
+
+/* ==========================================
+   STORY SECTION
+========================================== */
+
+.about-page-area1{
+    padding:110px 0;
+}
+
+.story-img{
+    width:100%;
+    border-radius:28px;
+    box-shadow:0 18px 50px rgba(0,0,0,.08);
+}
+
+.section-subtitle{
+    color:#2563eb;
+    font-weight:700;
+    display:inline-block;
+    margin-bottom:10px;
+}
+
+.headding2 h2{
+    font-size:50px;
+    font-weight:700;
+    margin-bottom:24px;
+    color:#111827;
+}
+
+.headding2 p{
+    color:#6b7280;
+    line-height:34px;
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+/* ==========================================
+   PROCESS SECTION
+========================================== */
+
+.process-section{
+    padding:110px 0;
+    background:#f8fafc;
+}
+
+.process-main-img{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+    border-radius:28px;
+    box-shadow:0 18px 50px rgba(0,0,0,.08);
+}
+
+.custom-box-wrapper .single-box{
+    background:#fff;
+    padding:30px;
+    border-radius:18px;
+    border:1px solid #e5e7eb;
+    margin-bottom:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,.05);
+    transition:.3s;
+}
+
+.custom-box-wrapper .single-box:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 45px rgba(37,99,235,.12);
+}
+
+.custom-box-wrapper h4{
+    color:#1e3a8a;
+    font-size:22px;
+    margin-bottom:12px;
+    font-weight:700;
+}
+
+.custom-box-wrapper p{
+    color:#6b7280;
+    line-height:30px;
+}
+
+/* ==========================================
+   CTA SECTION
+========================================== */
+
+.email-innovation{
+    padding:110px 0;
+}
+
+.email-innovation .container{
+    background:linear-gradient(
+        135deg,
+        #1e3a8a 0%,
+        #2563eb 100%
+    );
+    border-radius:32px;
+    padding:80px;
+    box-shadow:0 20px 50px rgba(37,99,235,.15);
+}
+
+.headding2-w h2{
+    color:#fff;
+    font-size:48px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.headding2-w p{
+    color:#dbeafe;
+    font-size:18px;
+    line-height:34px;
+}
+
+.cta-main-img{
+    width:100%;
+    max-width:450px;
+    margin:auto;
+    border-radius:28px;
+    box-shadow:0 20px 50px rgba(0,0,0,.2);
+}
+
+/* ==========================================
+   TRUST SECTION
+========================================== */
+
+.brand-area3{
+    padding:110px 0;
+    background:#fff;
+}
+
+.brand-area3 h2{
+    font-size:50px;
+    font-weight:700;
+    margin-bottom:20px;
+    color:#111827;
+}
+
+.brand-area3 p{
+    color:#6b7280;
+    line-height:34px;
+    font-size:18px;
+}
+
+/* ==========================================
+   IMAGE HOVER
+========================================== */
+
+.story-img,
+.process-main-img,
+.cta-main-img{
+    transition:.4s;
+}
+
+.story-img:hover,
+.process-main-img:hover,
+.cta-main-img:hover{
+    transform:scale(1.02);
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media(max-width:991px){
+
+    .pages-hero{
+        text-align:center;
+        padding:90px 0;
+    }
+
+    .hero-btns{
+        justify-content:center;
+    }
+
+    .main-headding p{
+        margin:auto;
+    }
+
+    .main-headding h1{
+        font-size:46px;
+    }
+
+    .hero-main-img{
+        height:380px;
+        margin-top:40px;
+    }
+
+    .story-img,
+    .process-main-img{
+        height:380px;
+    }
+
+    .email-innovation .container{
+        padding:60px 40px;
+        text-align:center;
+    }
+
+    .cta-main-img{
+        margin-top:30px;
+    }
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:768px){
+
+    .container{
+        padding-left:20px;
+        padding-right:20px;
+    }
+
+    .main-headding h1{
+        font-size:34px;
+        line-height:1.3;
+    }
+
+    .main-headding p{
+        font-size:15px;
+        line-height:28px;
+    }
+
+    .hero-btns{
+        flex-direction:column;
+    }
+
+    .theme-btn2,
+    .theme-btn3,
+    .theme-btn-dark{
+        width:100%;
+    }
+    .about-boxs .row{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.about-boxs .col-lg-3,
+.about-boxs .col-md-6{
+    width:50%;
+    flex:0 0 50%;
+    max-width:50%;
+}
+
+.about-boxs .single-box{
+    min-height:160px;
+    padding:25px 15px;
+}
+
+.about-boxs h2{
+    font-size:30px;
+}
+
+.about-boxs p{
+    font-size:14px;
+}
+    .headding2 h2,
+    .brand-area3 h2,
+    .headding2-w h2{
+        font-size:28px;
+        line-height:1.3;
+    }
+
+    .headding2 p,
+    .brand-area3 p{
+        font-size:15px;
+        line-height:28px;
+    }
+
+.hero-main-img,
+.story-img,
+.process-main-img{
+    height:220px !important;
+    object-fit:cover;
+}
+
+    .email-innovation .container{
+        padding:40px 25px;
+    }
+
+    .cta-main-img{
+        max-width:100%;
+    }
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media(max-width:480px){
+
+    .main-headding h1{
+        font-size:28px;
+    }
+    .about-boxs .single-box{
+    min-height:140px;
+    padding:20px 12px;
+}
+
+.about-boxs h2{
+    font-size:26px;
+}
+
+.about-boxs p{
+    font-size:13px;
+}
+    .hero-tag{
+        font-size:12px;
+        padding:10px 16px;
+    }
+
+    .about-boxs h2{
+        font-size:36px;
+    }
+
+.hero-main-img,
+.story-img,
+.process-main-img{
+    height:180px !important;
+}
+
+    .cta-main-img{
+        border-radius:20px;
+    }
+
+    .email-innovation .container{
+        border-radius:20px;
+    }
+}
+/* ================= REDUCE FIRST 3 IMAGES ================= */
+
+
+</style>
+
+{% endblock page_content %}

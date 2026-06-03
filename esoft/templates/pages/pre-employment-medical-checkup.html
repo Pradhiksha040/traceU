@@ -1,0 +1,997 @@
+{% extends 'landing-layout.html' %}
+{% load static %}
+
+{% block title %}
+Pre Employment Medical Checkup | TraceU
+{% endblock %}
+{% block icon %}
+<link rel="shortcut icon"
+      href="{% static 'img/icons/favicon.png' %}"
+      type="image/x-icon">
+{% endblock icon %}
+
+{% block page_content %}
+
+<!-- HERO SECTION -->
+<section class="passport-hero">
+
+    <div class="hero-blur blur1"></div>
+    <div class="hero-blur blur2"></div>
+
+    <div class="container">
+
+        <div class="passport-hero-wrapper">
+
+            <div class="passport-hero-content">
+
+                <span class="hero-tag">
+                    Healthy Employees. Strong Workforce.
+                </span>
+
+                <h1>
+                    Build a Strong Workforce with Accurate Pre-Employment Medical Testing
+                </h1>
+
+                <p>
+                    Ensure workforce health and safety through comprehensive medical
+                    screening solutions. Hire confidently knowing your candidates are fit.
+                </p>
+                
+                <div class="hero-buttons">
+
+                    <a href="/contact/" class="primary-btn">
+                        Contact Us
+                    </a>
+
+                    <a href="#drug-process" class="secondary-btn">
+                        See How It Works
+                    </a>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="passport-hero-image">
+
+                <img 
+                    src="{% static 'img/address/bg.png' %}" 
+                    alt="Drug test verification"
+                >
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+{% include 'partials/marquee.html' %}
+
+
+
+<!-- IMPORTANCE -->
+<section class="why-section">
+
+    <div class="container">
+
+        <div class="section-heading center">
+
+            <span>An effective screening process prevents bad hires</span>
+
+            <h2>
+                Importance of Pre-Employment Medical Test
+            </h2>
+
+            <p>
+                Conducting pre-employment medical examinations is crucial for
+                ensuring the health and safety of your workforce. This screening
+                is essential for warehouse staff, healthcare professionals,
+                IT professionals, customer service teams, and more.
+            </p>
+
+        </div>
+
+        <div class="why-grid">
+
+            <div class="why-card">
+
+                <img 
+                    src="{% static 'img/address/secure.png' %}" 
+                    class="card-icon"
+                >
+
+                <h3>Enhanced Workplace Safety</h3>
+
+                <p>
+                    Create a healthier and safer environment for all employees.
+                </p>
+
+            </div>
+
+            <div class="why-card">
+
+                <img
+                    src="{% static 'img/address/secure.png' %}"
+                    class="card-icon"
+                >
+
+                <h3>Reduced Absenteeism</h3>
+
+                <p>
+                    Identify health concerns early and minimize workplace absenteeism.
+                </p>
+
+            </div>
+
+            <div class="why-card">
+
+                <img 
+                    src="{% static 'img/address/verification.png' %}" 
+                    class="card-icon"
+                >
+
+                <h3>Regulatory Compliance</h3>
+
+                <p>
+                    Ensure compliance with industry health and safety standards.
+                </p>
+
+            </div>
+
+            <div class="why-card">
+
+                <img 
+                    src="{% static 'img/address/report.png' %}" 
+                    class="card-icon"
+                >
+
+                <h3>Reduced Healthcare Costs</h3>
+
+                <p>
+                    Detect health risks early and reduce long-term healthcare costs.
+                </p>
+
+            </div>
+
+            <div class="why-card">
+
+                <img 
+                    src="{% static 'img/address/employment.png' %}" 
+                    class="card-icon"
+                >
+
+                <h3>Improved Productivity</h3>
+
+                <p>
+                    Build a healthier workforce with higher productivity levels.
+                </p>
+
+            </div>
+
+            <div class="why-card">
+
+                <img 
+                    src="{% static 'img/address/identity.png' %}" 
+                    class="card-icon"
+                >
+
+                <h3>Promotion of Wellness Culture</h3>
+
+                <p>
+                    Encourage healthier lifestyles and employee wellness programs.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- INFO SECTION -->
+<section class="info-section">
+
+    <div class="container">
+
+        <div class="info-layout">
+
+            <div class="info-left">
+
+                <span class="small-title">
+                    Medical Screening Insights
+                </span>
+
+                <h2>
+                    Information You'll Know from Medical Testing
+                </h2>
+
+                <p>
+                    Our comprehensive pre-employment medical screening helps
+                    organizations make informed hiring decisions. The test
+                    establishes baseline health data and identifies existing
+                    medical conditions, lifestyle-related diseases, and
+                    contagious illnesses to ensure workforce safety.
+                </p>
+
+                <div class="hero-buttons info-buttons">
+
+                    <a href="/contact/" class="primary-btn">
+                        Contact Us
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="info-right">
+
+                <div class="dashboard-preview">
+
+                    <img 
+                        src="{% static 'img/address/dashboard.png' %}" 
+                        alt="Medical dashboard"
+                    >
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PROCESS -->
+<section class="process-section" id="medical-process">
+
+    <div class="container">
+
+        <div class="section-heading center">
+
+            <span>Easy onboarding</span>
+
+            <h2>
+                Three Simple Steps to Get Started
+            </h2>
+
+            <p>
+                TraceU smoothens the onboarding and medical screening process.
+            </p>
+
+        </div>
+
+        <div class="process-grid">
+
+            <div class="process-card">
+
+                <div class="step-number">01</div>
+
+                <h3>Request Medical Test</h3>
+
+                <p>
+                    Initiate the medical screening process for selected candidates.
+                </p>
+
+            </div>
+
+            <div class="process-card">
+
+                <div class="step-number">02</div>
+
+                <h3>Collect Samples</h3>
+
+                <p>
+                    Samples can be collected at your office or nearby diagnostic labs.
+                </p>
+
+            </div>
+
+            <div class="process-card">
+
+                <div class="step-number">03</div>
+
+                <h3>Review Results</h3>
+
+                <p>
+                    Receive comprehensive reports and verification findings quickly.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- UNIQUE FEATURES -->
+<section class="industries-section">
+
+    <div class="container">
+
+        <div class="section-heading center">
+
+            <span>What Makes TraceU Unique?</span>
+
+            <h2>
+                Modern Medical Verification Solutions
+            </h2>
+
+        </div>
+
+        <div class="industries-grid">
+
+            <div class="industry-card">
+                <h3>Safe & Secure</h3>
+            </div>
+
+            <div class="industry-card">
+                <h3>Faster Turnaround</h3>
+            </div>
+
+            <div class="industry-card">
+                <h3>Easy Integration</h3>
+            </div>
+
+            <div class="industry-card">
+                <h3>AI Powered</h3>
+            </div>
+
+            <div class="industry-card">
+                <h3>Workflow Automation</h3>
+            </div>
+
+            <div class="industry-card">
+                <h3>Transparent Pricing</h3>
+            </div>
+
+            <div class="industry-card">
+                <h3>ISO & PCI Compliant</h3>
+            </div>
+
+            <div class="industry-card">
+                <h3>Flexible API</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonial-section">
+
+    <div class="container">
+
+        <div class="section-heading center">
+
+            <span>Testimonials</span>
+
+            <h2>
+                Here’s What Our Customers Say
+            </h2>
+
+        </div>
+
+        <div class="testimonial-grid">
+
+            <div class="testimonial-card">
+
+                <p>
+                    TraceU is our go-to platform for medical and background verification.
+                    Their support team is extremely responsive and reliable.
+                </p>
+
+                <div class="client-info">
+
+                    <img src="{% static 'img/address/woman.png' %}">
+
+                    <div>
+                        <h4>Rupasi M</h4>
+                        <span>Datarynx Pvt Ltd</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <p>
+                    The onboarding and medical screening process is smooth,
+                    fast, and very easy to use for our HR team.
+                </p>
+
+                <div class="client-info">
+
+                    <img src="{% static 'img/address/man.png' %}">
+
+                    <div>
+                        <h4>Pushpita G</h4>
+                        <span>EZOPS Technologies</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <p>
+                    TraceU saves us time and effort with real-time updates,
+                    automated reminders, and accurate reports.
+                </p>
+
+                <div class="client-info">
+
+                    <img src="{% static 'img/address/woman.png' %}">
+
+                    <div>
+                        <h4>Rupali M</h4>
+                        <span>Integrichain India</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FAQ -->
+<section class="resources-section">
+
+    <div class="container">
+
+        <div class="section-heading center">
+
+            <span>FAQ</span>
+
+            <h2>
+                Pre-Employment Medical Test - FAQ
+            </h2>
+
+        </div>
+
+        <div class="why-grid">
+
+            <div class="why-card">
+
+                <h3>
+                    What is a pre-employment medical test?
+                </h3>
+
+                <p>
+                    A health checkup that establishes baseline health data
+                    and identifies existing medical conditions.
+                </p>
+
+            </div>
+
+            <div class="why-card">
+
+                <h3>
+                    Why do companies conduct medical tests?
+                </h3>
+
+                <p>
+                    To ensure workforce safety, productivity, and legal compliance.
+                </p>
+
+            </div>
+
+            <div class="why-card">
+
+                <h3>
+                    Where are tests conducted?
+                </h3>
+
+                <p>
+                    Basic tests can happen at your office, while advanced scans
+                    are conducted at nearby diagnostic centers.
+                </p>
+
+            </div>
+
+            <div class="why-card">
+
+                <h3>
+                    How long does the process take?
+                </h3>
+
+                <p>
+                    Most medical verification reports are delivered within 3 days.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+
+    <div class="container">
+
+        <div class="cta-box">
+
+            <h2>
+                Ready to Build a Healthier Workforce?
+            </h2>
+
+            <p>
+                TraceU's digital medical verification solutions are instant,
+                reliable, and flexible for your hiring needs.
+            </p>
+
+            <div class="cta-form">
+
+                <input 
+                    type="email" 
+                    placeholder="Enter your work email"
+                >
+
+                <button>
+                    Contact Us
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<style>
+
+:root{
+    --primary:#530ef0;
+    --black:#111111;
+    --white:#ffffff;
+    --light:#f8fafc;
+    --text:#6b7280;
+}
+
+.passport-hero{
+    padding:140px 0 110px;
+    background:linear-gradient(135deg,#111111,#530ef0);
+    color:white;
+    position:relative;
+    overflow:hidden;
+}
+
+.hero-blur{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(100px);
+    opacity:0.35;
+}
+
+.blur1{
+    width:300px;
+    height:300px;
+    background:#7c3aed;
+    top:-100px;
+    left:-100px;
+}
+
+.blur2{
+    width:280px;
+    height:280px;
+    background:#530ef0;
+    bottom:-80px;
+    right:-80px;
+}
+
+.passport-hero-wrapper{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:70px;
+}
+
+.hero-tag{
+    display:inline-block;
+    padding:10px 20px;
+    background:rgba(255,255,255,0.12);
+    border-radius:50px;
+    margin-bottom:25px;
+    font-size:14px;
+    font-weight:600;
+}
+
+.passport-hero h1{
+    font-size:60px;
+    line-height:1.15;
+    font-weight:800;
+}
+
+.passport-hero p{
+    margin-top:28px;
+    color:#e5e7eb;
+    font-size:18px;
+    line-height:1.9;
+}
+
+.hero-buttons{
+    margin-top:40px;
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+.primary-btn,
+.secondary-btn{
+    padding:16px 34px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:700;
+}
+
+.primary-btn{
+    background:white;
+    color:#530ef0;
+}
+
+.secondary-btn{
+    border:2px solid white;
+    color:white;
+}
+
+.section-heading{
+    margin-bottom:60px;
+}
+
+.section-heading.center{
+    text-align:center;
+}
+
+.section-heading h2{
+    font-size:48px;
+    margin-top:15px;
+    line-height:1.2;
+}
+
+.section-heading p{
+    max-width:850px;
+    margin:0 auto;
+    line-height:1.8;
+    color:#6b7280;
+}
+
+.section-heading p{
+    margin-top:20px;
+    font-size:18px;
+    color:#6b7280;
+    line-height:1.8;
+}
+
+.why-section,
+.process-section,
+.industries-section,
+.testimonial-section,
+.resources-section,
+.info-section{
+    padding:90px 0;
+}
+
+.why-grid,
+.process-grid,
+.industries-grid,
+.testimonial-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.why-card,
+.process-card,
+.industry-card,
+.testimonial-card{
+    background:white;
+    border-radius:24px;
+    padding:35px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.05);
+    transition:all .35s ease;
+}
+
+.why-card:hover,
+.process-card:hover,
+.industry-card:hover,
+.testimonial-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 25px 50px rgba(83,14,240,.15);
+}
+
+.why-card{
+    text-align:center;
+}
+
+.card-icon{
+    width:55px;
+    height:55px;
+    object-fit:contain;
+    margin-bottom:18px;
+}
+
+.step-number{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#530ef0;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:800;
+    margin-bottom:20px;
+}
+
+.info-layout{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:center;
+}
+
+.small-title{
+    color:#530ef0;
+    font-weight:700;
+    margin-bottom:15px;
+    display:inline-block;
+}
+
+.dashboard-preview img{
+    width:100%;
+    border-radius:24px;
+    box-shadow:0 20px 50px rgba(0,0,0,0.1);
+}
+
+.client-info{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-top:25px;
+}
+
+.client-info img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+}
+
+.cta-section{
+    padding:100px 0;
+}
+
+.cta-box{
+    background:linear-gradient(135deg,#111111,#530ef0);
+    color:white;
+    border-radius:30px;
+    padding:70px;
+    text-align:center;
+}
+
+.cta-form{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-top:40px;
+    flex-wrap:wrap;
+}
+
+.cta-form input{
+    width:380px;
+    padding:18px 22px;
+    border:none;
+    border-radius:50px;
+}
+
+.cta-form button{
+    padding:18px 32px;
+    border:none;
+    border-radius:50px;
+    background:white;
+    color:#530ef0;
+    font-weight:700;
+}
+
+.video-strip-section{
+    width:100%;
+    overflow:hidden;
+}
+
+.running-video{
+    width:100%;
+    display:block;
+}
+
+@media(max-width:992px){
+
+    .passport-hero-wrapper,
+    .info-layout{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .passport-hero h1{
+        font-size:42px;
+    }
+
+    .section-heading h2{
+        font-size:36px;
+    }
+
+}
+@media(max-width:768px){
+
+    .why-grid,
+    .industries-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:12px;
+    }
+
+    .why-card,
+    .industry-card{
+        padding:15px;
+        border-radius:16px;
+        text-align:center;
+    }
+
+    .card-icon{
+        width:36px;
+        height:36px;
+        margin-bottom:8px;
+    }
+
+    .why-card h3,
+    .industry-card h3{
+        font-size:14px;
+        line-height:1.3;
+        margin:8px 0;
+    }
+
+    .why-card p,
+    .industry-card p{
+        font-size:11px;
+        line-height:1.5;
+        margin:0;
+    }
+
+    .section-heading h2{
+        font-size:22px;
+        line-height:1.3;
+    }
+
+    .section-heading p{
+        font-size:14px;
+        line-height:1.6;
+    }
+}
+
+.process-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+}
+
+.process-card{
+    padding:15px;
+}
+
+.process-card h3{
+    font-size:14px;
+}
+
+.process-card p{
+    font-size:11px;
+    line-height:1.5;
+}
+
+.step-number{
+    width:40px;
+    height:40px;
+    font-size:14px;
+    margin:0 auto 12px;
+}
+
+.process-card{
+    text-align:center;
+}
+
+.process-card h3{
+    margin-top:15px;
+    margin-bottom:12px;
+    line-height:1.4;
+}
+
+.process-card p{
+    line-height:1.8;
+    color:#6b7280;
+}
+
+.testimonial-card p{
+    line-height:1.8;
+    color:#6b7280;
+}
+
+.testimonial-card{
+    height:100%;
+}
+
+.container{
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+    padding:0 20px;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+
+.process-card{
+    text-align:center;
+}
+
+.process-card h3{
+    margin-top:15px;
+    margin-bottom:12px;
+    line-height:1.4;
+}
+
+.process-card p{
+    line-height:1.8;
+    color:#6b7280;
+}
+
+.testimonial-card p{
+    line-height:1.8;
+    color:#6b7280;
+}
+
+.testimonial-card{
+    height:100%;
+}
+
+.container{
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+    padding:0 20px;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+.secondary-btn{
+    border:1px solid rgba(255,255,255,0.4);
+    color:white;
+    padding:16px 36px;
+    border-radius:14px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s ease; 
+}
+
+.secondary-btn:hover{
+    color: rgb(65, 225, 86);
+    border-color: rgb(65, 225, 86);
+}
+</style>
+
+{% endblock %}

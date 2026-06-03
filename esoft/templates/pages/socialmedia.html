@@ -1,0 +1,608 @@
+{% extends 'landing-layout.html' %}
+{% load static %}
+
+{% block title %}Social Media Verification | TraceU{% endblock %}
+{% block icon %}
+<link rel="shortcut icon"
+      href="{% static 'img/icons/favicon.png' %}"
+      type="image/x-icon">
+{% endblock icon %}
+{% block page_content %}
+
+<style>
+
+/* ================= GLOBAL ================= */
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    overflow-x:hidden;
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+h1,h2,h3,p{
+    margin:0;
+}
+
+p{
+    line-height:1.7;
+    color:#4b5563;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    padding:160px 0 110px;
+    background:linear-gradient(135deg,#530ef0,#111);
+    color:white;
+    position:relative;
+    overflow:hidden;
+}
+
+.blur{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(120px);
+    opacity:0.3;
+}
+
+.blur1{
+    width:320px;
+    height:320px;
+    background:#530ef0;
+    top:-120px;
+    left:-120px;
+}
+
+.blur2{
+    width:280px;
+    height:280px;
+    background:#8b5cf6;
+    bottom:-120px;
+    right:-120px;
+}
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.tag{
+    display:inline-block;
+    padding:10px 18px;
+    background:rgba(255,255,255,0.12);
+    border-radius:999px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.hero h1{
+    font-size:54px;
+    font-weight:800;
+    line-height:1.2;
+    margin-top:20px;
+}
+
+.hero p{
+    margin-top:20px;
+    font-size:18px;
+    color:#e5e7eb;
+}
+
+.hero-actions{
+    margin-top:35px;
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.btn-primary,
+.btn-secondary,
+.btn-light{
+    padding:14px 28px;
+    border-radius:999px;
+    font-weight:700;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.btn-primary{
+    background:white;
+    color:#530ef0;
+}
+
+.btn-primary:hover{
+    transform:translateY(-4px);
+}
+
+.btn-secondary{
+    border:2px solid white;
+    color:white;
+}
+
+.btn-secondary:hover{
+    background:white;
+    color:#530ef0;
+}
+
+/* ================= TRUSTED ================= */
+
+.trusted-section{
+    padding:90px 0;
+    background:#fff;
+    text-align:center;
+}
+
+.section-heading span{
+    color:#530ef0;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+.section-heading h2{
+    font-size:40px;
+    margin:10px 0;
+    font-weight:800;
+}
+
+.section-heading p{
+    max-width:750px;
+    margin:0 auto;
+    color:#6b7280;
+}
+
+.trusted-logos{
+    margin-top:40px;
+    display:flex;
+    justify-content:center;
+    gap:35px;
+    flex-wrap:wrap;
+    align-items:center;
+}
+
+.trusted-logos img{
+    width:110px;
+    opacity:0.7;
+    transition:0.3s;
+}
+
+.trusted-logos img:hover{
+    opacity:1;
+    transform:scale(1.05);
+}
+
+/* ================= SECTION ================= */
+
+.section{
+    padding:110px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.section-title span{
+    color:#530ef0;
+    font-weight:700;
+    text-transform:uppercase;
+}
+
+.section-title h2{
+    font-size:42px;
+    font-weight:800;
+    margin-top:10px;
+}
+
+/* ================= GRIDS ================= */
+
+.grid-4{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:25px;
+}
+
+.grid-2{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:stretch;
+}
+
+/* ================= CARD ================= */
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.06);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 45px rgba(83,14,240,0.18);
+}
+
+.card img{
+    width:60px;
+    margin-bottom:15px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:14px;
+    color:#6b7280;
+}
+
+/* ================= ANALYSIS ================= */
+
+.analysis-box{
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.08);
+    height:100%;
+}
+
+.analysis-list{
+    margin-top:20px;
+    padding-left:0;
+}
+
+.analysis-list li{
+    margin:12px 0;
+    padding-left:28px;
+    position:relative;
+    color:#374151;
+}
+
+.analysis-list li::before{
+    content:"✔";
+    color:#530ef0;
+    position:absolute;
+    left:0;
+    font-weight:bold;
+}
+
+/* ================= DASHBOARD ================= */
+
+.dashboard{
+    height:100%;
+}
+
+.dashboard img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0 20px 50px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.dashboard img:hover{
+    transform:scale(1.02);
+}
+CSS 
+.video-strip-section{
+    width: 100%;
+    overflow: hidden;
+}
+
+.running-video{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+}
+/* ================= CTA ================= */
+
+.cta{
+    padding:110px 0;
+}
+
+.cta .container{
+    display:flex;
+    justify-content:center;
+}
+
+.cta-box{
+    width:100%;
+    max-width:1050px;
+    background:linear-gradient(135deg,#530ef0,#111);
+    color:white;
+    padding:80px 40px;
+    border-radius:28px;
+    text-align:center;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:18px;
+
+    box-shadow:0 20px 60px rgba(0,0,0,0.25);
+}
+
+.cta-box h2{
+    font-size:42px;
+    font-weight:800;
+    line-height:1.2;
+}
+
+.cta-box p{
+    max-width:650px;
+    font-size:16px;
+    color:#e5e7eb;
+}
+
+.btn-light{
+    margin-top:10px;
+    background:white;
+    color:#530ef0;
+    padding:14px 30px;
+    border-radius:999px;
+    font-weight:700;
+    text-decoration:none;
+    transition:0.3s;
+    display:inline-block;
+}
+
+.btn-light:hover{
+    transform:translateY(-4px);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:992px){
+
+    .hero-grid,
+    .grid-2{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .hero-actions{
+        justify-content:center;
+    }
+
+    .trusted-logos{
+        gap:20px;
+    }
+}
+
+@media(max-width:600px){
+
+    .hero h1{
+        font-size:28px;
+        line-height:1.3;
+    }
+
+    .hero p{
+        font-size:14px;
+    }
+
+    .hero-actions{
+        flex-direction:column;
+        gap:10px;
+        align-items:center;
+    }
+
+    .grid-4{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+        gap:12px;
+    }
+
+    .card{
+        padding:14px 10px;
+    }
+
+    .card img{
+        width:40px;
+        margin-bottom:8px;
+    }
+
+    .card h3{
+        font-size:14px;
+        line-height:1.3;
+        margin-bottom:6px;
+    }
+
+    .card p{
+        font-size:11px;
+        line-height:1.4;
+    }
+
+    /* ✅ REDUCE BIG IMAGES ON MOBILE */
+    .dashboard img{
+        width:85%;
+        height:auto;
+        margin:0 auto;
+        display:block;
+    }
+
+    .hero .dashboard img{
+        width:80%;
+        margin-top:20px;
+    }
+
+    .analysis-box + .dashboard img{
+        width:85%;
+    }
+
+    /* CTA text adjustment */
+    .cta-box h2{
+        font-size:24px;
+    }
+
+    .cta-box p{
+        font-size:13px;
+    }
+}
+
+</style>
+
+<!-- HERO -->
+<section class="hero">
+
+    <div class="blur blur1"></div>
+    <div class="blur blur2"></div>
+
+    <div class="container">
+
+        <div class="hero-grid">
+
+            <div>
+
+                <span class="tag">TraceU Verification Services</span>
+
+                <h1>Social Media Verification for Safer Hiring Decisions</h1>
+
+                <p>
+                    Analyze candidate online behavior, detect risks, and ensure cultural fit using AI-powered screening.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="/contact/" class="btn-primary">Contact Us</a>
+                    <a href="/contact/" class="btn-secondary">Schedule Demo</a>
+                </div>
+
+            </div>
+
+            <div class="dashboard">
+                <img src="{% static 'img/social/social.png' %}" alt="Dashboard">
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- TRUSTED -->
+{% include 'partials/marquee.html' %}
+
+<!-- WHY -->
+<section class="section">
+
+    <div class="container">
+
+        <div class="section-title">
+            <span>Why It Matters</span>
+            <h2>Protect Your Company Before Hiring</h2>
+        </div>
+
+        <div class="grid-4">
+
+            <div class="card">
+                <img src="{% static 'img/social/risk.png' %}">
+                <h3>Risk Detection</h3>
+                <p>Identify harmful online behavior early and prevent risky hires.</p>
+            </div>
+
+            <div class="card">
+                <img src="{% static 'img/social/reputation.png' %}">
+                <h3>Reputation Safety</h3>
+                <p>Protect brand image and company trust.</p>
+            </div>
+
+            <div class="card">
+                <img src="{% static 'img/social/compliance.png' %}">
+                <h3>Compliance Ready</h3>
+                <p>Avoid legal risks and ensure safe hiring.</p>
+            </div>
+
+            <div class="card">
+                <img src="{% static 'img/social/security.png' %}">
+                <h3>Safe Hiring</h3>
+                <p>Build a secure workforce with verified insights.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ANALYSIS -->
+<section class="section" style="background:#f8fafc;">
+
+    <div class="container">
+
+        <div class="section-title">
+            <span>Insights</span>
+            <h2>What We Analyze</h2>
+        </div>
+
+        <div class="grid-2">
+
+            <div class="analysis-box">
+
+                <p style="font-weight:600; color:#111; font-size:16px; margin-bottom:10px;">
+                    We analyze only public data to ensure safe hiring decisions.
+                </p>
+
+                <p style="margin-bottom:18px;">
+                    Our system focuses on identifying risk indicators across multiple behavior categories:
+                </p>
+
+                <ul class="analysis-list">
+                    <li>Violent or abusive content</li>
+                    <li>Illegal or extremist behavior</li>
+                    <li>Hate speech detection</li>
+                    <li>Drug-related content</li>
+                </ul>
+
+            </div>
+
+            <div class="dashboard">
+                <img src="{% static 'img/social/analyze.png' %}">
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CTA -->
+<section class="cta">
+
+    <div class="container">
+
+        <div class="cta-box">
+
+            <h2>Start Social Media Verification with TraceU</h2>
+            <p>Make faster and safer hiring decisions with automation.</p>
+
+            <a href="/contact/" class="btn-light">Request Demo</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

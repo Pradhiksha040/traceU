@@ -1,0 +1,937 @@
+{% extends 'landing-layout.html' %}
+{% load static %}
+
+{% block title %}Employment Verification | TraceU{% endblock %}
+{% block icon %}
+<link rel="shortcut icon"
+      href="{% static 'img/icons/favicon.png' %}"
+      type="image/x-icon">
+{% endblock icon %}
+{% block page_content %}
+
+<!-- HERO SECTION -->
+<section class="emp-hero">
+
+    <div class="hero-glow g1"></div>
+    <div class="hero-glow g2"></div>
+
+    <div class="container">
+
+        <div class="emp-hero-wrapper">
+
+            <div class="emp-hero-content">
+
+                <span class="hero-tag">
+                    TraceU Verification Services
+                </span>
+
+                <h1>
+                    Verify Employment History with Confidence
+                </h1>
+
+                <p>
+                    Validate candidate job roles, companies, tenure, and professional background
+                    instantly with secure and automated employment verification.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="/contact/" class="primary-btn">Contact Us</a>
+                    <a href="/contact/" class="secondary-btn">Schedule Demo</a>
+                </div>
+
+            </div>
+
+            <div class="emp-hero-image">
+                <img src="{% static 'img/employment/dashboard.png' %}"
+                     alt="Employment verification dashboard illustration">
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- TRUST -->
+
+
+{% include 'partials/marquee.html' %}
+
+<!-- WHY SECTION -->
+<section class="why-emp">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="small-title">
+                Why Employment Verification Matters
+            </span>
+
+            <h2>
+                Prevent Fake Job History & Ensure Authentic Hiring
+            </h2>
+        </div>
+
+        <div class="grid-4">
+
+            <div class="card">
+                <img src="{% static 'img/employment/work.png' %}"
+                     alt="Work history validation icon">
+
+                <h3>Work History Validation</h3>
+
+                <p>
+                    Confirm previous job roles and employment timeline.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="{% static 'img/employment/job.png' %}"
+                     alt="Job title verification icon">
+
+                <h3>Job Title Check</h3>
+
+                <p>
+                    Verify designation accuracy across companies.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="{% static 'img/employment/duration.png' %}"
+                     alt="Employment duration icon">
+
+                <h3>Employment Duration</h3>
+
+                <p>
+                    Validate start and end dates of employment.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="{% static 'img/employment/fraud.png' %}"
+                     alt="Fraud detection icon">
+
+                <h3>Fraud Detection</h3>
+
+                <p>
+                    Identify fake or exaggerated experience claims.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROCESS -->
+<section class="process">
+
+    <div class="container">
+
+        <div class="section-heading center">
+            <span class="small-title">How It Works</span>
+
+            <h2>
+                Simple & Automated Employment Verification Process
+            </h2>
+        </div>
+
+        <div class="grid-3">
+
+            <div class="step">
+                <div class="num">01</div>
+
+                <h3>Submit Candidate Details</h3>
+
+                <p>
+                    Add employee information securely on TraceU platform.
+                </p>
+            </div>
+
+            <div class="step">
+                <div class="num">02</div>
+
+                <h3>Automated Verification</h3>
+
+                <p>
+                    We validate employment history using verified data sources.
+                </p>
+            </div>
+
+            <div class="step">
+                <div class="num">03</div>
+
+                <h3>Instant Report</h3>
+
+                <p>
+                    Receive detailed verification report in real time.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FEATURES -->
+<section class="features">
+
+    <div class="container">
+
+        <div class="section-heading center">
+
+            <span class="small-title">
+                Why Choose TraceU
+            </span>
+
+            <h2>
+                Built for Fast, Secure & <br>
+                Scalable Verification
+            </h2>
+
+        </div>
+
+        <div class="grid-4">
+
+            <div class="feature">AI-Powered Verification</div>
+            <div class="feature">Secure Data Handling</div>
+            <div class="feature">Fast Turnaround Time</div>
+            <div class="feature">Automated Workflow</div>
+            <div class="feature">Real-Time Updates</div>
+            <div class="feature">Compliance Ready</div>
+            <div class="feature">Scalable API</div>
+            <div class="feature">HR Friendly Dashboard</div>
+            <div class="feature">24/7 Verification Support</div>
+            <div class="feature">Cloud-Based Access</div>
+            <div class="feature">Multi-Company Verification</div>
+    <div class="feature">Advanced Risk Analysis</div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+<section class="cta">
+
+    <div class="container">
+
+        <div class="cta-box">
+
+            <div class="cta-text">
+
+                <h2>
+                    Start Employment Verification with TraceU Today
+                </h2>
+
+                <p>
+                    Make smarter hiring decisions with trusted background verification.
+                </p>
+
+                <a href="/contact/" class="cta-btn">
+                    Get Started
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- STYLES -->
+<style>
+
+/* GLOBAL */
+
+body{
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    font-family:Arial,sans-serif;
+    background:#ffffff;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+
+/* HERO */
+
+.emp-hero{
+    padding:140px 0;
+    background:linear-gradient(135deg,#111,#530ef0);
+    color:white;
+    position:relative;
+    overflow:hidden;
+}
+
+.hero-glow{
+    position:absolute;
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    filter:blur(120px);
+    opacity:0.3;
+}
+
+.g1{
+    background:#8b5cf6;
+    top:-100px;
+    left:-100px;
+}
+
+.g2{
+    background:#06b6d4;
+    bottom:-100px;
+    right:-100px;
+}
+
+.emp-hero-wrapper{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:60px;
+}
+
+.hero-tag{
+    display:inline-block;
+    padding:10px 20px;
+    background:rgba(255,255,255,0.15);
+    border-radius:50px;
+    font-weight:600;
+}
+
+.emp-hero h1{
+    font-size:56px;
+    font-weight:800;
+    margin-top:20px;
+    line-height:1.1;
+}
+
+.emp-hero p{
+    margin-top:20px;
+    font-size:18px;
+    line-height:1.7;
+    color:#e5e7eb;
+}
+
+.emp-hero-image{
+    text-align:center;
+}
+
+.emp-hero-image img{
+    width:100%;
+    max-width:500px;
+    animation:float 5s infinite ease-in-out;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-15px);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+
+
+/* BUTTONS */
+
+.hero-buttons{
+    margin-top:30px;
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.primary-btn,
+.secondary-btn{
+    padding:14px 30px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:700;
+    transition:0.3s;
+}
+
+.primary-btn{
+    background:white;
+    color:#530ef0;
+}
+
+.primary-btn:hover{
+    transform:translateY(-3px);
+}
+
+.secondary-btn{
+    border:2px solid white;
+    color:white;
+}
+
+.secondary-btn:hover{
+    background:white;
+    color:#530ef0;
+}
+
+
+/* TRUST */
+
+.trust-section{
+    padding:80px 0;
+    text-align:center;
+}
+
+.trust-section h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.trust-section p{
+    font-size:18px;
+    color:#555;
+}
+
+
+/* SECTION COMMON */
+
+.why-emp,
+.process,
+.features{
+    padding:100px 0;
+    background:#f8fafc;
+}
+
+.section-heading{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.small-title{
+    display:block;
+    color:#530ef0;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    margin-bottom:18px;
+}
+
+.section-heading h2{
+    font-size:46px;
+    font-weight:800;
+    line-height:1.2;
+    position:relative;
+    display:inline-block;
+    padding-bottom:12px;
+}
+
+.section-heading h2::after{
+    content:"";
+    position:absolute;
+    left:50%;
+    bottom:0;
+    transform:translateX(-50%);
+    width:60%;
+    height:4px;
+    background:linear-gradient(90deg,#530ef0,#06b6d4);
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.section-heading:hover h2::after{
+    width:100%;
+}
+
+
+/* GRID */
+
+.grid-4{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:30px;
+    align-items:stretch;
+}
+
+.grid-3{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:40px;
+}
+
+
+/* CARDS */
+
+.card{
+    background:white;
+    padding:40px 30px;
+    border-radius:22px;
+    text-align:center;
+    transition:0.35s ease;
+    border:1px solid #e5e7eb;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-start;
+
+    min-height:320px;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(83,14,240,0.12);
+}
+
+.card img{
+    width:85px;
+    margin-bottom:28px;
+    display:block;
+}
+
+.card h3{
+    font-size:34px;
+    line-height:1.2;
+    margin-bottom:18px;
+    font-weight:700;
+    color:#111827;
+}
+
+.card p{
+    font-size:18px;
+    line-height:1.7;
+    color:#4b5563;
+    max-width:280px;
+}
+
+
+/* PROCESS */
+
+.step{
+    padding:40px;
+    text-align:center;
+    border-radius:22px;
+    background:white;
+    transition:0.35s;
+}
+
+.step:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(83,14,240,0.12);
+}
+
+.num{
+    width:70px;
+    height:70px;
+    background:#530ef0;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:auto;
+    font-size:24px;
+    font-weight:800;
+    margin-bottom:25px;
+}
+
+.step h3{
+    font-size:28px;
+    margin-bottom:18px;
+}
+
+.step p{
+    color:#555;
+    line-height:1.7;
+}
+
+
+/* FEATURES */
+
+.feature{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    text-align:center;
+    font-weight:700;
+    min-height:120px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    position:relative;
+    overflow:hidden;
+
+    transition:0.35s ease;
+    border:1px solid #e5e7eb;
+}
+
+.feature::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        135deg,
+        rgba(83,14,240,0.08),
+        rgba(6,182,212,0.08)
+    );
+    opacity:0;
+    transition:0.3s;
+}
+
+.feature:hover{
+    transform:translateY(-10px);
+    box-shadow:0 12px 30px rgba(83,14,240,0.15);
+}
+
+.feature:hover::before{
+    opacity:1;
+}
+
+
+/* CTA */
+
+.cta{
+    padding:100px 0;
+    background:white;
+}
+
+.cta-box{
+    background:#530ef0;
+    color:white;
+    padding:70px;
+    border-radius:30px;
+    text-align:center;
+}
+
+.cta-text{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+}
+
+.cta-text h2{
+    font-size:42px;
+    margin:0;
+}
+
+.cta-text p{
+    font-size:18px;
+    color:#e5e7eb;
+}
+
+.cta-btn{
+    padding:14px 32px;
+    background:white;
+    color:#530ef0;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:700;
+    transition:0.3s;
+}
+
+.cta-btn:hover{
+    transform:translateY(-3px);
+}
+
+
+/* RESPONSIVE */
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px){
+
+    .emp-hero{
+        padding:120px 0 80px;
+    }
+
+    .emp-hero-wrapper{
+        grid-template-columns:1fr;
+        text-align:center;
+        gap:40px;
+    }
+
+    .emp-hero-content{
+        order:1;
+    }
+
+    .emp-hero-image{
+        order:2;
+        display:flex;
+        justify-content:center;
+    }
+
+    .emp-hero-image img{
+        width:90%;
+        max-width:500px;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+
+    .emp-hero h1{
+        font-size:42px;
+        line-height:1.2;
+    }
+
+    .emp-hero p{
+        font-size:16px;
+    }
+
+    .section-heading h2{
+        font-size:34px;
+    }
+
+    .trust-section h2{
+        font-size:32px;
+    }
+
+    .cta-text h2{
+        font-size:32px;
+    }
+
+    .card h3{
+        font-size:24px;
+    }
+
+    .step h3{
+        font-size:24px;
+    }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px){
+
+    .emp-hero{
+        padding:100px 0 70px;
+    }
+
+    .emp-hero-wrapper{
+        gap:30px;
+    }
+
+    .emp-hero h1{
+        font-size:30px;
+        line-height:1.25;
+    }
+
+    .emp-hero p{
+        font-size:15px;
+        line-height:1.8;
+        max-width:100%;
+    }
+
+    .hero-tag{
+        font-size:12px;
+        padding:8px 16px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        align-items:center;
+        gap:12px;
+    }
+
+    .primary-btn,
+    .secondary-btn{
+        width:220px;
+        text-align:center;
+    }
+
+    /* HERO IMAGE */
+
+    .emp-hero-image{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .emp-hero-image img{
+        width:95%;
+        max-width:450px;
+    }
+
+    /* WHY SECTION */
+
+    .grid-4{
+        grid-template-columns:repeat(2,1fr);
+        gap:15px;
+    }
+
+    .card{
+        padding:20px 15px;
+        min-height:auto;
+        border-radius:16px;
+    }
+
+    .card img{
+        width:55px;
+        margin-bottom:15px;
+    }
+
+    .card h3{
+        font-size:16px;
+        margin-bottom:10px;
+        line-height:1.3;
+    }
+
+    .card p{
+        font-size:13px;
+        line-height:1.5;
+    }
+
+    /* PROCESS */
+
+    .grid-3{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .step{
+        padding:25px 20px;
+    }
+
+    .step h3{
+        font-size:20px;
+    }
+
+    .step p{
+        font-size:14px;
+    }
+
+    .num{
+        width:55px;
+        height:55px;
+        font-size:18px;
+    }
+
+    /* FEATURES */
+
+    .features .grid-4{
+        grid-template-columns:repeat(2,1fr);
+        gap:15px;
+    }
+
+    .feature{
+        min-height:90px;
+        padding:15px;
+        font-size:14px;
+        line-height:1.4;
+    }
+
+    /* HEADINGS */
+
+    .section-heading{
+        margin-bottom:40px;
+    }
+
+    .section-heading h2{
+        font-size:26px;
+        line-height:1.3;
+    }
+
+    .trust-section h2{
+        font-size:26px;
+    }
+
+    .trust-section p{
+        font-size:15px;
+    }
+
+    /* CTA */
+
+    .cta{
+        padding:70px 0;
+    }
+
+    .cta-box{
+        padding:35px 20px;
+        border-radius:20px;
+    }
+
+    .cta-text h2{
+        font-size:24px;
+        line-height:1.3;
+    }
+
+    .cta-text p{
+        font-size:14px;
+    }
+
+    .cta-btn{
+        width:200px;
+        text-align:center;
+    }
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px){
+
+    .emp-hero h1{
+        font-size:26px;
+    }
+
+    .section-heading h2{
+        font-size:22px;
+    }
+
+    .grid-4{
+        grid-template-columns:repeat(2,1fr);
+        gap:12px;
+    }
+
+    .features .grid-4{
+        grid-template-columns:repeat(2,1fr);
+        gap:12px;
+    }
+
+    .card{
+        padding:15px 12px;
+    }
+
+    .card img{
+        width:45px;
+    }
+
+    .card h3{
+        font-size:14px;
+    }
+
+    .card p{
+        font-size:12px;
+    }
+
+    .feature{
+        font-size:12px;
+        padding:12px;
+        min-height:80px;
+    }
+
+    .emp-hero-image img{
+        width:100%;
+        max-width:420px;
+    }
+}
+
+</style>
+
+{% endblock %}

@@ -1,0 +1,1002 @@
+{% extends 'landing-layout.html' %}
+{% load static %}
+
+{% block title %}Passport Verification | TraceU{% endblock %}
+{% block icon %}
+<link rel="shortcut icon"
+      href="{% static 'img/icons/favicon.png' %}"
+      type="image/x-icon">
+{% endblock icon %}
+{% block page_content %}
+
+<!-- HERO SECTION -->
+<section class="passport-hero">
+
+    <div class="hero-blur blur1"></div>
+    <div class="hero-blur blur2"></div>
+
+    <div class="container">
+
+        <div class="passport-hero-wrapper">
+
+            <div class="passport-hero-content">
+
+                <span class="hero-tag">
+                    TraceU Verification Services
+                </span>
+
+                <h1>
+                    Verify Candidate Passport Information Effortlessly
+                </h1>
+
+                <p>
+                    Run secure and accurate passport verification checks to validate
+                    candidate identity, nationality, and document authenticity with ease.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="{% url 'pages:dynamic_pages' 'contact' %}" class="primary-btn">
+                        Contact Us
+                    </a>
+
+                    <a href="{% url 'pages:dynamic_pages' 'contact' %}" class="secondary-btn">
+                        Schedule a Demo
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="passport-hero-image">
+
+                <img 
+                    src="{% static 'img/passport/check.png' %}" 
+                    alt="Passport verification illustration showing secure identity validation"
+                >
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+{% include 'partials/marquee.html' %}
+
+
+<!-- WHY PASSPORT CHECK -->
+<section class="why-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>Why Passport Verification Matters</span>
+
+            <h2>
+                Prevent Fraudulent Hiring with Secure Passport Verification
+            </h2>
+
+        </div>
+
+        <div class="why-grid">
+
+            <div class="why-card">
+                <img src="{% static 'img/passport/authentication.png' %}" class="card-icon" alt="">
+                <h3>Identity Validation</h3>
+                <p>Ensure the candidate is using authentic identity documents.</p>
+            </div>
+
+            <div class="why-card">
+                <img src="{% static 'img/passport/country.png' %}" class="card-icon" alt="">
+                <h3>Nationality Confirmation</h3>
+                <p>Verify nationality and legal identification details accurately.</p>
+            </div>
+
+            <div class="why-card">
+                <img src="{% static 'img/passport/detection.png' %}" class="card-icon" alt="">
+                <h3>Fraud Detection</h3>
+                <p>Detect altered or tampered passport information instantly.</p>
+            </div>
+
+            <div class="why-card">
+                <img src="{% static 'img/passport/reduction.png' %}" class="card-icon" alt="">
+                <h3>Risk Reduction</h3>
+                <p>Avoid compliance issues and reduce hiring-related risks.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- INFORMATION SECTION -->
+<section class="info-section">
+
+    <div class="container">
+
+        <div class="info-layout">
+
+            <div class="info-left">
+
+                <span class="small-title">Verification Insights</span>
+
+                <h2>Information You Can Verify</h2>
+
+                <p>
+                    Our passport verification process helps organizations validate
+                    important candidate details securely and efficiently.
+                </p>
+
+            </div>
+
+            <div class="info-right">
+
+                <div class="dashboard-preview">
+                    <img src="{% static 'img/passport/verification.png' %}" alt="">
+                </div>
+
+                <div class="info-box">Candidate identity and nationality verification</div>
+                <div class="info-box">Passport authenticity and legitimacy checks</div>
+                <div class="info-box">Detection of forged or manipulated documents</div>
+                <div class="info-box">Compliance-ready verification reports</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PROCESS -->
+<section class="process-section">
+
+    <div class="container">
+
+        <div class="section-heading center">
+
+            <span>How TraceU Works</span>
+
+            <h2>Fast & Secure Passport Verification Process</h2>
+
+        </div>
+
+        <div class="process-grid">
+
+            <div class="process-card">
+                <img src="{% static 'img/passport/passport.png' %}" class="process-image" alt="">
+                <div class="step-number">01</div>
+                <h3>Upload Passport Details</h3>
+                <p>Submit the candidate passport details securely through our platform.</p>
+            </div>
+
+            <div class="process-card">
+                <img src="{% static 'img/passport/database-management.png' %}" class="process-image" alt="">
+                <div class="step-number">02</div>
+                <h3>MRZ & Data Validation</h3>
+                <p>Our system validates passport information using advanced algorithms.</p>
+            </div>
+
+            <div class="process-card">
+                <img src="{% static 'img/passport/time-check-symbol.png' %}" class="process-image" alt="">
+                <div class="step-number">03</div>
+                <h3>Real-Time Verification</h3>
+                <p>Receive instant verification status with accurate validation reports.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FEATURES -->
+<section class="features-section">
+
+    <div class="container">
+
+        <div class="section-heading center">
+
+            <span>Why Choose TraceU</span>
+
+            <h2>Powerful Verification Built for Modern Hiring</h2>
+
+        </div>
+
+        <div class="features-grid">
+
+            <div class="feature-item">
+                <img src="{% static 'img/passport/artificial-intelligence.png' %}" alt="">
+                <span>AI-Powered Verification</span>
+            </div>
+
+            <div class="feature-item">
+                <img src="{% static 'img/passport/shield.png' %}" alt="">
+                <span>Secure & Encrypted Platform</span>
+            </div>
+
+            <div class="feature-item">
+                <img src="{% static 'img/passport/back-in-time.png' %}" alt="">
+                <span>Fast Turnaround Time</span>
+            </div>
+
+            <div class="feature-item">
+                <img src="{% static 'img/passport/cloud-computing.png' %}" alt="">
+                <span>Remote-Friendly Process</span>
+            </div>
+
+            <div class="feature-item">
+                <img src="{% static 'img/passport/automation.png' %}" alt="">
+                <span>Workflow Automation</span>
+            </div>
+
+            <div class="feature-item">
+                <img src="{% static 'img/passport/business-solution.png' %}" alt="">
+                <span>Scalable Enterprise Solutions</span>
+            </div>
+
+            <div class="feature-item">
+                <img src="{% static 'img/passport/transparency.png' %}" alt="">
+                <span>Transparent Reporting</span>
+            </div>
+
+            <div class="feature-item">
+                <img src="{% static 'img/passport/onboarding.png' %}" alt="">
+                <span>Easy Candidate Onboarding</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+
+    <div class="container">
+
+        <div class="cta-box">
+
+            <img src="{% static 'img/passport/verification-illustration.png' %}" class="cta-image" alt="">
+
+            <h2>Start Passport Verification with TraceU Today</h2>
+
+            <p>Simplify hiring with secure, accurate, and automated background checks.</p>
+
+            <a href="{% url 'pages:dynamic_pages' 'contact' %}" class="cta-btn">
+                Request a Demo
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<style>
+.passport-hero{
+    padding:140px 0 110px;
+    background:linear-gradient(135deg,#530ef0,#7c3aed);
+    color:white;
+    position:relative;
+    overflow:hidden;
+}
+
+.hero-blur{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(100px);
+    opacity:0.35;
+}
+
+.blur1{
+    width:300px;
+    height:300px;
+    background:#8b5cf6;
+    top:-100px;
+    left:-100px;
+}
+
+.blur2{
+    width:280px;
+    height:280px;
+    background:#06b6d4;
+    bottom:-80px;
+    right:-80px;
+}
+
+.passport-hero-wrapper{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:70px;
+}
+
+.hero-tag{
+    display:inline-block;
+    padding:10px 20px;
+    background:rgba(255,255,255,0.15);
+    border-radius:50px;
+    margin-bottom:25px;
+    font-size:14px;
+    font-weight:600;
+    backdrop-filter:blur(10px);
+}
+
+.passport-hero h1{
+    font-size:58px;
+    font-weight:800;
+    line-height:1.2;
+}
+
+.passport-hero p{
+    margin:30px 0 0;
+    font-size:19px;
+    line-height:1.9;
+    color:#e5e7eb;
+}
+
+.passport-hero-image img{
+    width:100%;
+    max-width:450px;
+    animation:floatImage 5s ease-in-out infinite;
+}
+
+@keyframes floatImage{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-15px);}
+    100%{transform:translateY(0);}
+}
+
+.hero-buttons{
+    margin-top:40px;
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.primary-btn,
+.secondary-btn{
+    padding:16px 34px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:700;
+    transition:0.3s;
+}
+
+.primary-btn{
+    background:white;
+    color:#530ef0;
+}
+
+.primary-btn:hover{
+    background:#111111;
+    color:white;
+}
+
+.secondary-btn{
+    border:2px solid white;
+    color:white;
+}
+
+.secondary-btn:hover{
+    background:white;
+    color:#530ef0;
+}
+
+.trusted-section{
+    padding:80px 0;
+    text-align:center;
+    background:#ffffff;
+}
+
+.trusted-section h2{
+    font-size:40px;
+    margin-bottom:20px;
+    font-weight:800;
+}
+
+.trusted-section p{
+    max-width:800px;
+    margin:auto;
+    color:#6b7280;
+    line-height:1.8;
+}
+
+.why-section,
+.process-section,
+.features-section{
+    padding:100px 0;
+    background:#f8fafc;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    margin-top:50px;
+}
+
+.process-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    margin-top:50px;
+}
+
+.features-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    margin-top:50px;
+}
+
+.section-heading{
+    margin-bottom:60px;
+    text-align:center;
+}
+
+.section-heading span{
+    color:#530ef0;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+.section-heading h2{
+    font-size:46px;
+    margin:14px auto 0;
+    font-weight:800;
+    color:#111111;
+    max-width:850px;
+    line-height:1.3;
+}
+
+
+
+.why-card,
+.process-card{
+    background:white;
+    padding:35px;
+    border-radius:24px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.05);
+    transition:0.35s;
+    text-align:center;
+}
+
+.why-card:hover,
+.process-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(83,14,240,0.12);
+}
+
+.card-icon{
+    width:70px;
+    margin-bottom:20px;
+}
+
+.why-card h3,
+.process-card h3{
+    margin-bottom:16px;
+    font-size:24px;
+    font-weight:700;
+}
+
+.why-card p,
+.process-card p{
+    color:#6b7280;
+    line-height:1.8;
+}
+
+.info-section{
+    padding:100px 0;
+    background:white;
+}
+
+.info-layout{
+    display:flex;
+    flex-direction:column;
+    gap:40px;
+    align-items:center;
+}
+
+.small-title{
+    color:#530ef0;
+    font-weight:700;
+    text-transform:uppercase;
+}
+
+.info-left h2{
+    font-size:46px;
+    margin:20px 0;
+    font-weight:800;
+}
+
+.info-left p{
+    color:#6b7280;
+    line-height:1.9;
+}
+
+.info-right{
+    display:grid;
+    grid-template-columns:280px 1fr;
+    gap:20px;
+    align-items:start;
+}
+
+.dashboard-preview{
+    grid-row:1 / span 4;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+}
+
+.dashboard-preview{
+    grid-row:1 / span 4;
+    display:flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+    margin-top:30px;
+}
+
+.dashboard-preview img{
+    width:100%;
+    max-width:340px;
+    border-radius:24px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.12);
+    transform:translateX(-60px);
+}
+
+.info-box{
+    background:#f8fafc;
+    padding:25px;
+    border-radius:18px;
+    font-weight:600;
+    border-left:5px solid #530ef0;
+    transition:0.3s;
+}
+
+.info-box:hover{
+    transform:translateY(-6px);
+}
+
+.process-image{
+    width:90px;
+    margin:0 auto 20px;
+    display:block;
+}
+
+.step-number{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#530ef0;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:800;
+    margin:0 auto 25px;
+}
+
+.features-grid{
+    margin-top:40px;
+}
+
+.feature-item{
+    background:white;
+    padding:30px 20px;
+    border-radius:20px;
+    text-align:center;
+    font-weight:700;
+    box-shadow:0 8px 20px rgba(0,0,0,0.05);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+    transition:0.35s;
+}
+
+.feature-item img{
+    width:60px;
+}
+
+.feature-item:hover{
+    transform:translateY(-10px);
+    background:#530ef0;
+    color:white;
+}
+
+.cta-section{
+    padding:100px 0;
+    background:white;
+}
+
+.cta-box{
+    background:#530ef0;
+    color:white;
+    padding:70px;
+    border-radius:30px;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+}
+
+.cta-image{
+    width:140px;
+    margin-bottom:25px;
+}
+
+.cta-box h2{
+    font-size:46px;
+    margin-bottom:20px;
+    font-weight:800;
+}
+
+.cta-box p{
+    color:#e5e7eb;
+    margin-bottom:35px;
+    font-size:18px;
+}
+
+.cta-btn{
+    display:inline-block;
+    background:white;
+    color:#530ef0;
+    padding:16px 36px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:700;
+    transition:0.3s;
+}
+
+.cta-btn:hover{
+    background:#111111;
+    color:white;
+}
+
+/* =========================
+   TABLET VIEW
+========================= */
+
+@media(max-width:992px){
+
+    .passport-hero{
+        padding:120px 0 80px;
+    }
+
+    .passport-hero-wrapper{
+        grid-template-columns:1fr;
+        gap:40px;
+        text-align:center;
+    }
+
+    .passport-hero-content{
+        order:1;
+    }
+
+    .passport-hero-image{
+        order:2;
+        display:flex;
+        justify-content:center;
+    }
+
+    .passport-hero-image img{
+        max-width:320px;
+    }
+
+    .passport-hero h1{
+        font-size:42px;
+    }
+
+    .passport-hero p{
+        font-size:16px;
+        line-height:1.8;
+        max-width:700px;
+        margin:25px auto 0;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+
+    .section-heading h2,
+    .info-left h2,
+    .trusted-section h2,
+    .cta-box h2{
+        font-size:34px;
+    }
+
+    .info-layout{
+        gap:40px;
+    }
+
+    .info-right{
+        grid-template-columns:180px 1fr;
+    }
+
+    .dashboard-preview img{
+        max-width:180px;
+    }
+}
+
+
+/* =========================
+   MOBILE VIEW
+========================= */
+
+@media(max-width:768px){
+
+    /* HERO */
+
+    .passport-hero{
+        padding:90px 0 60px;
+    }
+
+    .passport-hero-wrapper{
+        grid-template-columns:1fr;
+        gap:25px;
+        text-align:center;
+    }
+
+    .passport-hero-content{
+        order:1;
+    }
+
+    .passport-hero-image{
+        order:2;
+        display:flex;
+        justify-content:center;
+        margin-top:10px;
+    }
+
+    .passport-hero-image img{
+        width:100%;
+        max-width:280px;
+    }
+
+    .hero-tag{
+        font-size:11px;
+        padding:8px 14px;
+    }
+
+    .passport-hero h1{
+        font-size:32px;
+        line-height:1.25;
+        margin-bottom:15px;
+    }
+
+    .passport-hero p{
+        font-size:15px;
+        line-height:1.7;
+        margin-top:15px;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+        gap:12px;
+        margin-top:25px;
+    }
+
+    .primary-btn,
+    .secondary-btn{
+        padding:12px 20px;
+        font-size:13px;
+    }
+
+    /* TITLES */
+
+    .section-heading{
+        margin-bottom:40px;
+    }
+
+    .section-heading h2{
+        font-size:28px;
+    }
+
+    .trusted-section h2{
+        font-size:28px;
+    }
+
+    .info-left h2{
+        font-size:28px;
+    }
+
+    .cta-box h2{
+        font-size:28px;
+    }
+
+    /* INFO SECTION */
+
+    .info-layout{
+        gap:25px;
+    }
+
+    .info-left{
+        text-align:center;
+    }
+
+    .info-right{
+        grid-template-columns:1fr;
+        gap:15px;
+    }
+
+    .dashboard-preview{
+        grid-row:auto;
+        justify-content:center;
+        margin-bottom:10px;
+    }
+
+    .dashboard-preview img{
+        max-width:200px;
+    }
+
+    .info-box{
+        padding:15px;
+        font-size:13px;
+    }
+
+    /* CARDS */
+
+    .why-grid,
+    .process-grid,
+    .features-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:15px;
+    }
+
+    .why-card,
+    .process-card,
+    .feature-item{
+        padding:20px 15px;
+    }
+
+    .card-icon,
+    .process-image,
+    .feature-item img{
+        width:50px;
+    }
+
+    .why-card h3,
+    .process-card h3{
+        font-size:16px;
+        margin-bottom:10px;
+    }
+
+    .why-card p,
+    .process-card p{
+        font-size:12px;
+        line-height:1.6;
+    }
+
+    .feature-item span{
+        font-size:13px;
+    }
+
+    /* CTA */
+
+    .cta-box{
+        padding:45px 25px;
+    }
+
+    .cta-image{
+        width:100px;
+    }
+
+    .cta-box p{
+        font-size:14px;
+    }
+
+    .dashboard-preview{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        width:100%;
+        margin:0 auto 15px;
+    }
+
+    .dashboard-preview img{
+        max-width:220px;
+        transform:none; /* removes left shift on mobile */
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media(max-width:480px){
+
+    .passport-hero h1{
+        font-size:28px;
+    }
+
+    .passport-hero p{
+        font-size:14px;
+    }
+
+    .passport-hero-image img{
+        max-width:240px;
+    }
+
+    .primary-btn,
+    .secondary-btn{
+        width:100%;
+        justify-content:center;
+        text-align:center;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    /* KEEP ALL BOXES IN 2 COLUMNS */
+
+    .why-grid,
+    .process-grid,
+    .features-grid{
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        gap:10px;
+    }
+
+    .why-card,
+    .process-card,
+    .feature-item{
+        padding:14px 10px;
+        border-radius:14px;
+    }
+
+    .card-icon,
+    .process-image,
+    .feature-item img{
+        width:40px;
+    }
+
+    .why-card h3,
+    .process-card h3{
+        font-size:13px;
+        line-height:1.3;
+        margin-bottom:8px;
+    }
+
+    .why-card p,
+    .process-card p{
+        font-size:11px;
+        line-height:1.4;
+    }
+
+    .feature-item span{
+        font-size:11px;
+        line-height:1.3;
+    }
+
+    .step-number{
+        width:34px;
+        height:34px;
+        font-size:12px;
+        margin-bottom:10px;
+    }
+
+    .section-heading h2,
+    .trusted-section h2,
+    .info-left h2,
+    .cta-box h2{
+        font-size:24px;
+    }
+
+    .cta-box{
+        padding:35px 20px;
+    }
+}
+</style>
+{% endblock %}

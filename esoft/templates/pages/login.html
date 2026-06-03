@@ -1,0 +1,218 @@
+{% extends 'landing-layout.html' %}
+{% load static %}
+
+{% block title %}Login | TraceU{% endblock %}
+
+{% block page_content %}
+
+<style>
+/* ================= BACKGROUND ================= */
+.auth-wrapper{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: radial-gradient(circle at top, #3e629d, #1b3676);
+    padding:40px 15px;
+}
+
+/* ================= CARD ================= */
+.auth-box{
+    width:100%;
+    max-width:440px;
+    background:#ffffff;
+    border-radius:20px;
+    padding:32px;
+    box-shadow:0 20px 60px rgba(0,0,0,0.35);
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn{
+    from{transform:translateY(10px); opacity:0;}
+    to{transform:translateY(0); opacity:1;}
+}
+
+.auth-title{
+    font-size:26px;
+    font-weight:800;
+    text-align:center;
+    margin-bottom:22px;
+    color:#111827;
+}
+
+/* ================= SOCIAL BUTTONS ================= */
+.social-btn{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+    padding:13px;
+    margin-bottom:12px;
+    border-radius:12px;
+    border:1px solid #e5e7eb;
+    background:#ffffff;
+    cursor:pointer;
+    font-weight:600;
+    font-size:14px;
+    transition:all .25s ease;
+}
+
+.social-btn:hover{
+    background:#f8fafc;
+    border-color:#d1d5db;
+    transform:translateY(-1px);
+}
+
+.social-icon{
+    width:22px;
+    height:22px;
+    flex-shrink:0;
+    display:block;
+}
+
+/* ================= DIVIDER ================= */
+.divider{
+    display:flex;
+    align-items:center;
+    text-align:center;
+    margin:18px 0;
+    color:#9ca3af;
+    font-size:13px;
+}
+
+.divider::before,
+.divider::after{
+    content:"";
+    flex:1;
+    height:1px;
+    background:#e5e7eb;
+    margin:0 10px;
+}
+
+/* ================= INPUTS ================= */
+input{
+    width:100%;
+    padding:13px;
+    margin-bottom:12px;
+    border:1px solid #e5e7eb;
+    border-radius:10px;
+    outline:none;
+    transition:0.2s;
+    font-size:14px;
+}
+
+input:focus{
+    border-color:#6366f1;
+    box-shadow:0 0 0 3px rgba(99,102,241,0.15);
+}
+
+/* ================= BUTTON ================= */
+.btn-primary{
+    width:100%;
+    padding:13px;
+    background:linear-gradient(135deg,#4f46e5,#6366f1);
+    color:#fff;
+    border:none;
+    border-radius:10px;
+    font-weight:700;
+    cursor:pointer;
+    transition:0.2s;
+    margin-top:5px;
+}
+
+.btn-primary:hover{
+    transform:translateY(-1px);
+    box-shadow:0 10px 20px rgba(79,70,229,0.25);
+}
+
+/* ================= LINKS ================= */
+.auth-links{
+    display:flex;
+    justify-content:flex-end;
+    font-size:13px;
+    margin-top:10px;
+}
+
+.auth-links a{
+    color:#4f46e5;
+    text-decoration:none;
+}
+
+.signup-text{
+    text-align:center;
+    margin-top:16px;
+    font-size:14px;
+    color:#6b7280;
+}
+
+.signup-text a{
+    color:#4f46e5;
+    font-weight:600;
+    text-decoration:none;
+}
+</style>
+
+<div class="auth-wrapper">
+    <div class="auth-box">
+
+        <div class="auth-title">Sign in to TraceU</div>
+
+        <!-- ================= SOCIAL LOGIN ================= -->
+
+        <!-- GOOGLE -->
+        <button class="social-btn">
+            <svg class="social-icon" viewBox="0 0 48 48">
+                <path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.3 36 24 36c-6.6 0-12-5.4-12-12S17.4 12 24 12c3 0 5.7 1.1 7.8 3l5.7-5.7C34.1 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.3-.4-3.5z"/>
+                <path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.3 19 12 24 12c3 0 5.7 1.1 7.8 3l5.7-5.7C34.1 6.1 29.3 4 24 4c-7.7 0-14.3 4.3-17.7 10.7z"/>
+                <path fill="#4CAF50" d="M24 44c5.2 0 10-2 13.5-5.2l-6.2-5.2c-2.1 1.6-4.6 2.4-7.3 2.4-5.2 0-9.6-3.3-11.2-8l-6.5 5C9.6 39.6 16.2 44 24 44z"/>
+                <path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.3-2.3 4.2-4 5.6l6.2 5.2C41.1 35.4 44 30.2 44 24c0-1.3-.1-2.3-.4-3.5z"/>
+            </svg>
+            Continue with Google
+        </button>
+
+        <!-- APPLE -->
+        <button class="social-btn">
+            <svg class="social-icon" viewBox="0 0 24 24" fill="#000">
+                <path d="M16.7 13.1c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.9-1.8-3.5-1.8-1.5-.2-2.9.9-3.7.9-.8 0-2-.9-3.3-.9-1.7 0-3.2 1-4.1 2.5-1.8 3.1-.5 7.7 1.3 10.3.9 1.3 1.9 2.8 3.3 2.7 1.3-.1 1.8-.8 3.4-.8s2 .8 3.4.8c1.4 0 2.3-1.3 3.2-2.6 1-1.5 1.4-3 1.4-3.1-.1 0-3.4-1.3-3.4-4.5z"/>
+                <path d="M14.6 5.8c.7-.9 1.2-2.1 1-3.3-1 .1-2.2.7-2.9 1.5-.6.8-1.2 2-1 3.2 1.1.1 2.2-.6 2.9-1.4z"/>
+            </svg>
+            Continue with Apple
+        </button>
+
+        <!-- MICROSOFT -->
+        <button class="social-btn">
+            <svg class="social-icon" viewBox="0 0 24 24">
+                <rect x="2" y="2" width="9" height="9" fill="#F25022"/>
+                <rect x="13" y="2" width="9" height="9" fill="#7FBA00"/>
+                <rect x="2" y="13" width="9" height="9" fill="#00A4EF"/>
+                <rect x="13" y="13" width="9" height="9" fill="#FFB900"/>
+            </svg>
+            Continue with Microsoft
+        </button>
+
+        <div class="divider">OR</div>
+
+        <!-- ================= LOGIN FORM ================= -->
+        <form method="POST">
+            {% csrf_token %}
+
+            <input type="text" name="username" placeholder="Email or Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+
+            <button type="submit" class="btn-primary">Sign In</button>
+
+            <div class="auth-links">
+                <a href="#">Forgot Password?</a>
+            </div>
+        </form>
+
+        <div class="signup-text">
+            Don't have an account?
+            <a href="{% url 'pages:dynamic_pages' 'signup' %}">Sign Up</a>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,991 @@
+{% extends 'landing-layout.html' %}
+{% load static %}
+
+{% block title %}Court Check | TraceU{% endblock %}
+{% block icon %}
+<link rel="shortcut icon"
+      href="{% static 'img/icons/favicon.png' %}"
+      type="image/x-icon">
+{% endblock icon %}
+{% block page_content %}
+
+<!-- HERO SECTION -->
+
+<section class="cc-hero">
+  <div class="container">
+    <div class="cc-hero-grid">
+      <div class="cc-hero-content">
+        <span class="cc-hero-tag">Court Record Verification</span>
+        <h1>
+          Verify Court Records
+          with Confidence
+        </h1>
+        <p>
+          Court check verification helps organizations review criminal and civil litigation history,
+          so you can hire responsibly, reduce risk, and stay compliant.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="/contact/" class="primary-btn">Request a Demo</a>
+          <a href="#faq" class="secondary-btn">Read FAQs</a>
+        </div>
+
+        <div class="cc-hero-note">
+          Built for HR teams, recruiters, and compliance workflows.
+        </div>
+
+        <div class="cc-hero-bullets" aria-label="Key benefits">
+          <div class="cc-bullet"><i class="fa-solid fa-shield-check"></i> Risk-aware hiring</div>
+          <div class="cc-bullet"><i class="fa-solid fa-scale-balanced"></i> Compliance support</div>
+          <div class="cc-bullet"><i class="fa-solid fa-badge-check"></i> Audit-friendly reports</div>
+        </div>
+      </div>
+
+      <div class="cc-hero-media" aria-hidden="true">
+        <div class="cc-media-card">
+          <img
+            src="{% static 'img/hero/traceu1.jpg' %}"
+            alt="Court record verification"
+            loading="lazy"
+          />
+          <div class="cc-media-overlay">
+            <span class="cc-chip"><i class="fa-solid fa-gavel"></i> Court Coverage</span>
+            <span class="cc-chip"><i class="fa-solid fa-magnifying-glass"></i> Real-time checks</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="floating-card fc1">
+    <i class="fa-solid fa-gavel"></i>
+    Criminal Verification
+  </div>
+
+  <div class="floating-card fc2">
+    <i class="fa-solid fa-shield"></i>
+    Compliance Ready
+  </div>
+</section>
+{% include 'partials/marquee.html' %}
+
+<!-- TRUST / STATS -->
+<section class="cc-trust">
+  <div class="container">
+    <div class="cc-trust-grid">
+      <div class="cc-trust-card">
+        <h2>99.9%</h2>
+        <p>Verification Accuracy</p>
+      </div>
+      <div class="cc-trust-card">
+        <h2>2–5 Min</h2>
+        <p>Typical Screening Window</p>
+      </div>
+      <div class="cc-trust-card">
+        <h2>20+ Checks</h2>
+        <p>Unified Background Screening</p>
+      </div>
+      <div class="cc-trust-card">
+        <h2>24/7</h2>
+        <p>Discrepancy Monitoring</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXISTING CONTENT (REFINED) -->
+<!-- IMPORTANCE SECTION -->
+<section class="cc-section cc-importance">
+  <div class="container">
+    <div class="section-header">
+      <span>Court Record Verification</span>
+      <h2>Importance of Court Record Checks</h2>
+      <p>
+        Get a clear view of a candidate’s criminal and civil lawsuits—helping organizations
+        hire with confidence and maintain workplace safety.
+      </p>
+    </div>
+
+    <div class="cc-grid cc-3">
+      <div class="cc-card">
+        <i class="fa-solid fa-user-shield"></i>
+        <h3>Identify Risky Hires</h3>
+        <p>Detect candidates with potential criminal or legal history.</p>
+      </div>
+      <div class="cc-card">
+        <i class="fa-solid fa-scale-balanced"></i>
+        <h3>Stay Compliant</h3>
+        <p>Support compliance with government and industry requirements.</p>
+      </div>
+      <div class="cc-card">
+        <i class="fa-solid fa-building-shield"></i>
+        <h3>Organizational Safety</h3>
+        <p>Create a safer and more trustworthy work environment.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INFORMATION SECTION -->
+<section class="cc-section cc-info">
+  <div class="container">
+    <div class="section-header">
+      <span>Verification Insights</span>
+      <h2>Information You’ll Know</h2>
+    </div>
+
+    <div class="cc-grid cc-5">
+      <div class="cc-pill">Liens and Foreclosures</div>
+      <div class="cc-pill">Personal Restraining Orders</div>
+      <div class="cc-pill">Civil Rights Violations</div>
+      <div class="cc-pill">Tax Claims and Disputes</div>
+      <div class="cc-pill">Criminal Cases</div>
+    </div>
+  </div>
+</section>
+
+<!-- COURTS COVERED -->
+<section class="cc-section cc-coverage">
+  <div class="container">
+    <div class="section-header">
+      <span>Coverage</span>
+      <h2>List of Courts Covered</h2>
+      <p>
+        Designed to help teams understand records across multiple jurisdictions.
+      </p>
+    </div>
+
+    <div class="cc-grid cc-3">
+      <div class="cc-card cc-soft">
+        <img src="{% static 'img/icons/features-icon1.png' %}" alt="Court coverage" loading="lazy" />
+        <h3>District Courts &amp; Tribunals</h3>
+      </div>
+      <div class="cc-card cc-soft">
+        <img src="{% static 'img/icons/features-icon2.png' %}" alt="Court coverage" loading="lazy" />
+        <h3>Courts &amp; NCRDC Commission</h3>
+      </div>
+      <div class="cc-card cc-soft">
+        <img src="{% static 'img/icons/features-icon3.png' %}" alt="Court coverage" loading="lazy" />
+        <h3>High Courts &amp; Supreme Court</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EASY ONBOARDING -->
+<section class="cc-section cc-process">
+  <div class="container">
+    <div class="section-header">
+      <span>Easy Onboarding</span>
+      <h2>Three Simple Steps to Get Started</h2>
+    </div>
+
+    <div class="cc-grid cc-3">
+      <div class="cc-step">
+        <div class="cc-step-num">01</div>
+        <h3>Upload Candidate Information</h3>
+        <p>Start verification once the candidate profile is complete.</p>
+      </div>
+      <div class="cc-step">
+        <div class="cc-step-num">02</div>
+        <h3>Scan Court Records Database</h3>
+        <p>Detect criminal or civil lawsuits quickly and consistently.</p>
+      </div>
+      <div class="cc-step">
+        <div class="cc-step-num">03</div>
+        <h3>Get Real-Time Updates</h3>
+        <p>Receive instant alerts and discrepancy notifications.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY TRACEU -->
+<section class="cc-section cc-features" id="features">
+  <div class="container">
+    <div class="section-header">
+      <span>Why Choose TraceU</span>
+      <h2>Ideal Choice for Background Screening</h2>
+      <p>
+        Bring structure, speed, and clarity to hiring decisions with a single verification workflow.
+      </p>
+    </div>
+
+    <div class="cc-grid cc-5">
+      <div class="cc-card">
+        <h3>20+ Checks</h3>
+        <p>Comprehensive verification services in one platform.</p>
+      </div>
+      <div class="cc-card">
+        <h3>Reliable Reports</h3>
+        <p>Accurate documentation and verification reporting.</p>
+      </div>
+      <div class="cc-card">
+        <h3>HRMS Integration</h3>
+        <p>Works seamlessly with existing HR and ATS systems.</p>
+      </div>
+      <div class="cc-card">
+        <h3>Transparent Pricing</h3>
+        <p>Flexible pricing suitable for startups and enterprises.</p>
+      </div>
+      <div class="cc-card">
+        <h3>WhatsApp Verification</h3>
+        <p>World’s first “Verify on WhatsApp” onboarding flow.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VERIFICATION METHODS -->
+<section class="cc-section cc-methods">
+  <div class="container">
+    <div class="section-header">
+      <span>Verification Process</span>
+      <h2>How Court Checks Are Performed</h2>
+    </div>
+
+    <div class="cc-grid cc-2">
+      <div class="cc-card cc-soft">
+        <div class="cc-method-icon"><i class="fa-solid fa-file-signature"></i></div>
+        <h3>Court Check on Law Firm Letterhead</h3>
+        <p>
+          Based on the candidate’s address, nearby police stations and legal authorities
+          are contacted for verification.
+        </p>
+      </div>
+
+      <div class="cc-card cc-soft">
+        <div class="cc-method-icon"><i class="fa-solid fa-landmark"></i></div>
+        <h3>Court Record Verification</h3>
+        <p>
+          Retrieve details about lawsuits, criminal cases, and ongoing legal proceedings.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="cc-section cc-testimonials">
+  <div class="container">
+    <div class="section-header">
+      <span>Testimonials</span>
+      <h2>What Our Customers Say</h2>
+    </div>
+
+    <div class="cc-grid cc-3">
+      <div class="cc-quote">
+        <p>
+          “TraceU is our go-to platform for background checks.
+          Flexible, fast, and reliable support.”
+        </p>
+        <h4>Rupasi M</h4>
+      </div>
+      <div class="cc-quote">
+        <p>
+          “The UX is extremely user-friendly and simplifies
+          the complete verification process.”
+        </p>
+        <h4>Pushpita G</h4>
+      </div>
+      <div class="cc-quote">
+        <p>
+          “Real-time updates make HR verification easier and faster.”
+        </p>
+        <h4>Rupali M</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SINGLE FULL WIDTH VIDEO STRIP -->
+<section class="cc-video-strip" aria-label="Verification video">
+  <div class="container">
+    <div class="cc-video-wrap">
+      <video autoplay muted loop playsinline class="cc-running-video">
+        <source
+          src="{% static 'videos/verification.mp4' %}"
+          type="video/mp4"
+        >
+      </video>
+      <div class="cc-video-overlay">
+        <span class="cc-chip"><i class="fa-solid fa-circle-play"></i> Live Court Check Workflow</span>
+        <h3>Streamline verification with clarity and speed.</h3>
+        <p>From candidate details to court coverage, TraceU helps teams move faster while staying compliant.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="cc-cta" id="cta">
+  <div class="container">
+    <div class="cc-cta-box">
+      <div class="cc-cta-content">
+        <span class="cc-cta-tag"><i class="fa-solid fa-lock"></i> Compliance-ready verification</span>
+        <h2>Ready to reduce hiring risk?</h2>
+        <p>Book a demo and see how Court Record Verification fits into your background screening workflow.</p>
+        <div class="cc-cta-buttons">
+          <a href="/contact/" class="primary-btn">Book Demo</a>
+          <a href="#faq" class="secondary-btn">View FAQs</a>
+        </div>
+      </div>
+      <div class="cc-cta-visual" aria-hidden="true">
+        <img src="{% static 'img/hero/hero1-image.png' %}" alt="Court verification illustration" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<style>
+
+  .floating-card{
+    position:absolute;
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,0.18);
+    padding:14px 20px;
+    border-radius:18px;
+    color:#fff;
+    font-weight:600;
+  }
+
+  .fc1{
+    top:12%;
+    right:8%;
+  }
+
+  .fc2{
+    bottom:10%;
+    right:18%;
+  }
+  .cc-hero{
+    padding:150px 0 95px;
+    background:linear-gradient(135deg,#0b1220 0%,#143a8f 48%,#2563eb 100%);
+    color:#fff;
+    position:relative;
+    overflow:hidden;
+  }
+  .cc-hero::after{
+    content:'';
+    position:absolute;
+    width:520px;
+    height:520px;
+    background:rgba(255,255,255,0.08);
+    border-radius:50%;
+    top:-220px;
+    right:-160px;
+  }
+  .cc-hero-grid{
+    display:grid;
+    grid-template-columns:1.1fr 0.9fr;
+    gap:40px;
+    align-items:center;
+    position:relative;
+    z-index:2;
+  }
+  .cc-hero-tag{
+    display:inline-flex;
+    gap:10px;
+    align-items:center;
+    padding:10px 18px;
+    background:rgba(255,255,255,0.12);
+    border-radius:999px;
+    font-weight:700;
+    font-size:14px;
+    margin-bottom:18px;
+  }
+  .cc-hero h1{
+    font-size:62px;
+    line-height:1.06;
+    margin:0 0 22px;
+    font-weight:800;
+  }
+  .cc-hero p{
+    font-size:20px;
+    line-height:1.85;
+    color:#dbeafe;
+    margin:0 0 26px;
+    max-width:660px;
+  }
+  .hero-buttons{
+    display:flex;
+    gap:16px;
+    flex-wrap:wrap;
+    margin:0 0 20px;
+  }
+  .primary-btn{
+    background:#ffffff;
+    color:#2563eb;
+    padding:14px 30px;
+    border-radius:14px;
+    text-decoration:none;
+    font-weight:800;
+    transition:transform .2s;
+    display:inline-block;
+  }
+  .primary-btn:hover{ transform:translateY(-3px); }
+  .secondary-btn{
+    border:1px solid rgba(255,255,255,0.45);
+    color:#fff;
+    padding:14px 30px;
+    border-radius:14px;
+    text-decoration:none;
+    font-weight:700;
+    transition:transform .2s;
+    display:inline-block;
+  }
+  .secondary-btn:hover{ transform:translateY(-3px); }
+  .cc-hero-note{
+    color:#bfdbfe;
+    font-size:16px;
+    margin-top:10px;
+  }
+  .cc-hero-bullets{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px 14px;
+    margin-top:22px;
+  }
+  .cc-bullet{
+    background:rgba(255,255,255,0.10);
+    border:1px solid rgba(255,255,255,0.14);
+    padding:10px 12px;
+    border-radius:14px;
+    color:#dbeafe;
+    font-weight:650;
+    display:flex;
+    gap:10px;
+    align-items:center;
+    font-size:14px;
+  }
+  .cc-media-card{
+    border-radius:26px;
+    overflow:hidden;
+    position:relative;
+    background:#0b1220;
+    box-shadow:0 18px 50px rgba(0,0,0,0.35);
+  }
+  .cc-hero-media img{
+    width:100%;
+    height:auto;
+    display:block;
+    object-fit:cover;
+  }
+
+  .cc-media-overlay{
+    position:absolute;
+    left:16px;
+    bottom:16px;
+    right:16px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+  .cc-chip{
+    width:max-content;
+    max-width:100%;
+    padding:10px 12px;
+    background:rgba(37,99,235,0.92);
+    border-radius:999px;
+    color:#fff;
+    font-weight:800;
+    font-size:13px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.25);
+    display:inline-flex;
+    gap:10px;
+    align-items:center;
+  }
+
+  /* Trust */
+  .cc-trust{ padding:60px 0; background:#f8fafc; }
+  .cc-trust-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+  }
+.cc-trust-card{
+    background:linear-gradient(180deg,#ffffff 0%,#f8fbff 100%);
+    border-radius:24px;
+    padding:30px;
+    text-align:center;
+    border:1px solid #e5edf9;
+    transition:.3s;
+  }
+
+.cc-trust-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 40px rgba(37,99,235,0.12);
+}
+  .cc-trust-card h2{ margin:0 0 8px; color:#0f172a; font-size:34px; }
+  .cc-trust-card p{ margin:0; color:#6b7280; font-weight:650; }
+
+  /* Generic sections */
+  .cc-section{ padding:90px 0; background:#fff; }
+  .cc-importance{ background:#ffffff; }
+  .cc-info{ background:#f8fafc; }
+  .cc-coverage{ background:#ffffff; }
+  .cc-process{ background:#f8fafc; }
+  .cc-features{ background:#ffffff; }
+  .cc-methods{ background:#f8fafc; }
+  .cc-testimonials{ background:#ffffff; }
+
+  .section-header{ text-align:center; margin-bottom:60px; }
+  .section-header span{ color:#2563eb; font-weight:800; font-size:16px; }
+  .section-header h2{ font-size:54px; margin:16px 0 14px; color:#0f172a; line-height:1.15; }
+  .section-header p{ max-width:760px; margin:0 auto; color:#6b7280; line-height:1.85; font-size:18px; }
+
+  .cc-grid{ display:grid; gap:18px; }
+  .cc-3{ grid-template-columns:repeat(3,1fr); }
+  .cc-5{ grid-template-columns:repeat(5,1fr); }
+  .cc-2{ grid-template-columns:repeat(2,1fr); }
+
+.cc-card{
+    background:#fff;
+    position:relative;
+    overflow:hidden;
+}
+
+.cc-card::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    padding:1px;
+    border-radius:22px;
+    
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite:xor;
+    mask-composite:exclude;
+}
+  .cc-card:hover{ transform:translateY(-8px); box-shadow:0 18px 45px rgba(0,0,0,0.10); }
+  .cc-card i{ color:#2563eb; font-size:26px; margin-bottom:14px; display:block; }
+  .cc-card h3{ margin:0 0 12px; font-size:22px; color:#0f172a; }
+  .cc-card p{ margin:0; color:#6b7280; line-height:1.8; font-size:16px; }
+
+  .cc-pill{
+    background:#fff;
+    border-radius:999px;
+    padding:16px 18px;
+    box-shadow:0 12px 30px rgba(0,0,0,0.05);
+    text-align:center;
+    font-weight:800;
+    color:#0f172a;
+    border:1px solid rgba(37,99,235,0.08);
+  }
+
+  .cc-card.cc-soft{ background:linear-gradient(180deg,#ffffff 0%,#f1f6ff 100%); }
+
+  .cc-method-icon{
+    width:62px;
+    height:62px;
+    border-radius:18px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#eff6ff;
+    color:#2563eb;
+    font-size:22px;
+    margin-bottom:14px;
+  }
+
+  .cc-step-num{
+    width:62px;
+    height:62px;
+    border-radius:50%;
+    background:#2563eb;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:900;
+    margin-bottom:16px;
+  }
+  .cc-step h3{ margin:0 0 12px; font-size:22px; color:#0f172a; }
+  .cc-step p{ margin:0; color:#6b7280; line-height:1.8; font-size:16px; }
+  .cc-step{ background:#fff; border-radius:22px; padding:34px 26px; box-shadow:0 12px 30px rgba(0,0,0,0.06); transition:transform .2s, box-shadow .2s; }
+  .cc-step:hover{ transform:translateY(-8px); box-shadow:0 18px 45px rgba(0,0,0,0.10); }
+
+  .cc-video-strip{ padding:60px 0 70px; background:#0f172a; }
+  .cc-video-wrap{ position:relative; border-radius:26px; overflow:hidden; box-shadow:0 20px 55px rgba(0,0,0,0.35); }
+  .cc-running-video{ width:100%; height:420px; object-fit:cover; display:block; }
+  .cc-video-overlay{
+    position:absolute;
+    left:20px;
+    bottom:20px;
+    right:20px;
+    background:linear-gradient(180deg,rgba(2,6,23,0.0) 0%, rgba(2,6,23,0.85) 75%);
+    color:#fff;
+    padding:18px 18px;
+    border-radius:18px;
+  }
+  .cc-video-overlay h3{ margin:8px 0 10px; font-size:30px; }
+  .cc-video-overlay p{ margin:0; color:#cbd5e1; line-height:1.8; font-size:16px; }
+
+  /* Testimonials */
+  .cc-quote{
+    background:#fff;
+    border-radius:22px;
+    padding:34px 26px;
+    box-shadow:0 12px 30px rgba(0,0,0,0.06);
+  }
+  .cc-testimonials .cc-quote p{ color:#6b7280; line-height:1.9; font-size:16px; }
+  .cc-quote h4{ margin-top:18px; font-size:16px; font-weight:900; color:#0f172a; }
+
+  /* FAQ anchor */
+  #faq{ scroll-margin-top:90px; }
+
+  /* Final CTA */
+  .cc-cta{ padding:110px 0; background:#f8fafc; }
+  .cc-cta-box{
+    background:linear-gradient(135deg,#2563eb 0%, #1d4ed8 55%, #0f172a 120%);
+    border-radius:32px;
+    padding:50px;
+    display:grid;
+    grid-template-columns:1.2fr 0.8fr;
+    gap:28px;
+    align-items:center;
+    color:#fff;
+    box-shadow:0 22px 65px rgba(0,0,0,0.20);
+  }
+  .cc-cta-tag{ display:inline-flex; gap:10px; align-items:center; padding:10px 16px; border-radius:999px; background:rgba(255,255,255,0.14); font-weight:800; font-size:14px; margin-bottom:16px; }
+  .cc-cta-box h2{ font-size:46px; margin:0 0 14px; line-height:1.1; }
+  .cc-cta-box p{ margin:0 0 26px; color:#dbeafe; line-height:1.85; font-size:18px; }
+  .cc-cta-buttons{ display:flex; gap:16px; flex-wrap:wrap; }
+  .cc-cta-visual img{ width:100%; height:auto; max-width:360px; display:block; margin-left:auto; }
+
+  /* Responsive */
+  @media (max-width: 1024px){
+    .cc-hero-grid{ grid-template-columns:1fr; }
+    .cc-trust-grid{ grid-template-columns:repeat(2,1fr); }
+    .cc-grid.cc-5{ grid-template-columns:repeat(2,1fr); }
+    .cc-grid.cc-3{ grid-template-columns:repeat(2,1fr); }
+    .cc-cta-box{ grid-template-columns:1fr; }
+    .cc-cta-visual img{ margin:0 auto; }
+  }
+  .secondary-btn{
+    border:1px solid rgba(255,255,255,0.4);
+    color:white;
+    padding:16px 36px;
+    border-radius:14px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s ease; 
+}
+
+.secondary-btn:hover{
+    color: rgb(65, 225, 86);
+    border-color: rgb(65, 225, 86);
+}
+  @media (max-width:640px){
+
+    /* HERO */
+
+    .cc-hero{
+        padding:110px 0 70px;
+    }
+
+    .cc-hero-grid{
+        gap:25px;
+    }
+
+    .cc-hero h1{
+        font-size:34px;
+        line-height:1.15;
+        text-align:center;
+    }
+
+    .cc-hero p{
+        font-size:15px;
+        line-height:1.8;
+        text-align:center;
+    }
+
+    .cc-hero-content{
+        text-align:center;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+
+    .cc-hero-bullets{
+        justify-content:center;
+    }
+
+    /* HERO IMAGE */
+
+    .cc-hero-media{
+        display:flex;
+        justify-content:center;
+        margin-top:10px;
+    }
+
+    .cc-media-card{
+        width:100%;
+        max-width:280px;
+        margin:auto;
+    }
+
+    .cc-hero-media img{
+        width:100%;
+        max-width:280px;
+        height:auto;
+        margin:auto;
+        display:block;
+    }
+
+    /* FLOATING CARDS */
+
+    .floating-card{
+        font-size:12px;
+        padding:8px 12px;
+    }
+
+    .fc1{
+        top:8%;
+        right:4%;
+    }
+
+    .fc2{
+        bottom:8%;
+        right:4%;
+    }
+
+    /* SECTION HEADINGS */
+
+    .section-header{
+        margin-bottom:40px;
+    }
+
+    .section-header h2{
+        font-size:30px;
+        line-height:1.25;
+    }
+
+    .section-header p{
+        font-size:15px;
+    }
+
+    /* TRUST */
+
+    .cc-trust{
+        padding:45px 0;
+    }
+
+    .cc-trust-grid{
+        grid-template-columns:1fr;
+    }
+
+    .cc-trust-card{
+        padding:22px;
+    }
+
+    .cc-trust-card h2{
+        font-size:28px;
+    }
+
+    /* CARDS */
+
+    .cc-grid.cc-3,
+    .cc-grid.cc-2,
+    .cc-grid.cc-5{
+        grid-template-columns:1fr;
+    }
+
+    .cc-card,
+    .cc-step,
+    .cc-quote{
+        padding:22px;
+    }
+
+    .cc-card h3,
+    .cc-step h3{
+        font-size:20px;
+    }
+
+    /* VIDEO */
+
+    .cc-running-video{
+        height:220px;
+    }
+
+    .cc-video-overlay{
+        padding:12px;
+    }
+
+    .cc-video-overlay h3{
+        font-size:20px;
+    }
+
+    .cc-video-overlay p{
+        font-size:14px;
+    }
+
+    /* CTA */
+
+    .cc-cta{
+        padding:70px 0;
+    }
+
+    .cc-cta-box{
+        padding:30px 20px;
+        border-radius:24px;
+    }
+
+    .cc-cta-box h2{
+        font-size:30px;
+        text-align:center;
+    }
+
+    .cc-cta-box p{
+        font-size:15px;
+        text-align:center;
+    }
+
+    .cc-cta-buttons{
+        justify-content:center;
+    }
+
+    .cc-cta-visual{
+        display:flex;
+        justify-content:center;
+    }
+
+    .cc-cta-visual img{
+        max-width:220px;
+        width:100%;
+        margin:auto;
+    }
+
+    /* FAQ */
+
+    .faq-item{
+        padding:20px;
+        gap:16px;
+    }
+
+    .faq-icon{
+        min-width:50px;
+        width:50px;
+        height:50px;
+        font-size:18px;
+    }
+
+    .faq-content h3{
+        font-size:18px;
+    }
+
+    .faq-content p{
+        font-size:14px;
+        line-height:1.7;
+    }
+
+}
+@media (max-width:768px){
+
+    .faq-item{
+        flex-direction:column;
+        padding:24px;
+    }
+
+    .faq-content h3{
+        font-size:20px;
+    }
+
+    .faq-content p{
+        font-size:15px;
+    }
+}
+</style>
+
+
+<!-- FAQ SECTION -->
+<section class="faq-section" id="faq">
+
+    <div class="container">
+
+        <div class="section-header">
+            <span>FAQs</span>
+
+            <h2>
+                Court Record Verification - FAQ
+            </h2>
+
+            <p>
+                Everything you need to know about court record verification,
+                compliance checks, and hiring safety.
+            </p>
+        </div>
+
+        <div class="faq-wrapper">
+
+            <div class="faq-item">
+                <div class="faq-icon">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                </div>
+
+                <div class="faq-content">
+                    <h3>What is Employee Court Record Verification?</h3>
+
+                    <p>
+                        It is the process of checking a candidate’s criminal
+                        and court history during hiring.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-icon">
+                    <i class="fa-solid fa-shield-check"></i>
+                </div>
+
+                <div class="faq-content">
+                    <h3>Why is Court Record Verification necessary?</h3>
+
+                    <p>
+                        It helps organizations avoid risky hires and
+                        maintain workplace safety.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-icon">
+                    <i class="fa-solid fa-folder-open"></i>
+                </div>
+
+                <div class="faq-content">
+                    <h3>What records are checked?</h3>
+
+                    <p>
+                        Criminal cases, lawsuits, restraining orders,
+                        and other legal proceedings.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-icon">
+                    <i class="fa-solid fa-clock"></i>
+                </div>
+
+                <div class="faq-content">
+                    <h3>How long does verification take?</h3>
+
+                    <p>
+                        Verification timelines depend on jurisdiction
+                        and record availability.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

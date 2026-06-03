@@ -1,0 +1,963 @@
+{% extends 'landing-layout.html' %}
+{% load static %}
+
+{% block title %}Education Verification | TraceU{% endblock %}
+{% block icon %}
+<link rel="shortcut icon"
+      href="{% static 'img/icons/favicon.png' %}"
+      type="image/x-icon">
+{% endblock icon %}
+{% block page_content %}
+
+<!-- HERO SECTION -->
+<section class="edu-hero">
+
+    <div class="hero-glow glow1"></div>
+    <div class="hero-glow glow2"></div>
+
+    <div class="container">
+
+        <div class="edu-hero-wrapper">
+
+            <div class="edu-hero-content">
+
+                <span class="hero-tag">
+                    TraceU Verification Services
+                </span>
+
+                <h1>
+                    Reliable Education <br>
+                    Verification Made Simple
+                </h1>
+
+                <p>
+                    Verify candidate education history, degrees, certifications,
+                    graduation details, and academic credentials securely with TraceU.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="/contact/" class="primary-btn">
+                        Contact Us
+                    </a>
+
+                    <a href="/contact/" class="secondary-btn">
+                        Schedule Demo
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="edu-hero-image">
+
+                <img src="{% static 'img/education/dashboard.png' %}"
+                     alt="Education verification dashboard illustration">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- TRUST SECTION -->
+
+{% include 'partials/marquee.html' %}
+
+<!-- WHY SECTION -->
+<section class="why-edu">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="small-title">
+                Why Education Verification Matters
+            </span>
+
+            <h2>
+                Prevent Fake Degrees & <br>
+                Verify Genuine Qualifications
+            </h2>
+
+        </div>
+
+        <div class="grid-4">
+
+            <div class="card">
+
+                <img src="{% static 'img/education/degree.png' %}"
+                     alt="Degree verification icon">
+
+                <h3>
+                    Degree Validation
+                </h3>
+
+                <p>
+                    Verify whether the degree claimed by the candidate is authentic.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <img src="{% static 'img/education/university.png' %}"
+                     alt="University verification icon">
+
+                <h3>
+                    Institution Check
+                </h3>
+
+                <p>
+                    Confirm the university or institution attended by the candidate.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <img src="{% static 'img/education/graduation.png' %}"
+                     alt="Graduation verification icon">
+
+                <h3>
+                    Graduation Status
+                </h3>
+
+                <p>
+                    Validate completion year, enrollment period, and graduation details.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <img src="{% static 'img/education/fraud.png' %}"
+                     alt="Education fraud detection icon">
+
+                <h3>
+                    Fraud Detection
+                </h3>
+
+                <p>
+                    Identify forged certificates and inaccurate academic claims.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- EDUCATION DETAILS -->
+<section class="edu-details">
+
+    <div class="container">
+
+        <div class="details-wrapper">
+
+            <div class="details-image">
+
+                <img src="{% static 'img/education/history.png' %}"
+                     alt="Candidate education history illustration">
+
+            </div>
+
+            <div class="details-content">
+
+                <span class="small-title">
+                    Complete Academic Insights
+                </span>
+
+                <h2>
+                    Get Complete Education History in One Place
+                </h2>
+
+                <div class="detail-grid">
+
+                    <div class="detail-box">
+                        Course Enrollment
+                    </div>
+
+                    <div class="detail-box">
+                        Degree & Major
+                    </div>
+
+                    <div class="detail-box">
+                        Institution Name
+                    </div>
+
+                    <div class="detail-box">
+                        GPA / Marks
+                    </div>
+
+                    <div class="detail-box">
+                        Graduation Status
+                    </div>
+
+                    <div class="detail-box">
+                        Passing Year
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROCESS -->
+<section class="process">
+
+    <div class="container">
+
+        <div class="section-heading center">
+
+            <span class="small-title">
+                How It Works
+            </span>
+
+            <h2>
+                Fast & Secure Education Verification Process
+            </h2>
+
+        </div>
+
+        <div class="grid-3">
+
+            <div class="step">
+
+                <div class="num">01</div>
+
+                <h3>
+                    Submit Candidate Details
+                </h3>
+
+                <p>
+                    Candidates provide education details and supporting documents securely.
+                </p>
+
+            </div>
+
+            <div class="step">
+
+                <div class="num">02</div>
+
+                <h3>
+                    Verification Initiated
+                </h3>
+
+                <p>
+                    TraceU validates information directly with educational institutions.
+                </p>
+
+            </div>
+
+            <div class="step">
+
+                <div class="num">03</div>
+
+                <h3>
+                    Receive Verification Report
+                </h3>
+
+                <p>
+                    Get detailed verification results with discrepancies and status updates.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FEATURES -->
+<section class="features">
+
+    <div class="container">
+
+        <div class="section-heading center">
+
+            <span class="small-title">
+                Why Choose TraceU
+            </span>
+
+            <h2>
+                Built for Fast, Secure & <br>
+                Scalable Verification
+            </h2>
+
+        </div>
+
+        <div class="grid-4">
+
+            <div class="feature">AI-Powered Verification</div>
+
+            <div class="feature">Secure Data Protection</div>
+
+            <div class="feature">Automated Workflow</div>
+
+            <div class="feature">Real-Time Status Updates</div>
+
+            <div class="feature">Blockchain-Based Security</div>
+
+            <div class="feature">Compliance Ready</div>
+
+            <div class="feature">Fast Turnaround Time</div>
+
+            <div class="feature">Cloud-Based Dashboard</div>
+
+            <div class="feature">Scalable API Integrations</div>
+
+            <div class="feature">Remote-Friendly Process</div>
+
+            <div class="feature">Institution Verification</div>
+
+            <div class="feature">24/7 Verification Support</div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+<section class="cta">
+
+    <div class="container">
+
+        <div class="cta-box">
+
+            <div class="cta-text">
+
+                <h2>
+                    Start Education Verification with TraceU
+                </h2>
+
+                <p>
+                    Ensure authentic academic credentials and hire confidently.
+                </p>
+
+                <a href="/contact/" class="cta-btn">
+                    Get Started
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<style>
+
+/* GLOBAL */
+
+body{
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    font-family:Arial,sans-serif;
+    background:#ffffff;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+
+/* HERO */
+
+.edu-hero{
+    padding:140px 0;
+    background:linear-gradient(135deg,#111111,#530ef0);
+    color:white;
+    position:relative;
+    overflow:hidden;
+}
+
+.hero-glow{
+    position:absolute;
+    width:320px;
+    height:320px;
+    border-radius:50%;
+    filter:blur(120px);
+    opacity:0.3;
+}
+
+.glow1{
+    background:#8b5cf6;
+    top:-100px;
+    left:-100px;
+}
+
+.glow2{
+    background:#06b6d4;
+    bottom:-100px;
+    right:-100px;
+}
+
+.edu-hero-wrapper{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+.video-strip-section{
+    width: 100%;
+    overflow: hidden;
+}
+
+.running-video{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+}
+.hero-tag{
+    display:inline-block;
+    padding:10px 22px;
+    background:rgba(255,255,255,0.15);
+    border-radius:50px;
+    font-weight:700;
+}
+
+.edu-hero h1{
+    font-size:58px;
+    line-height:1.1;
+    margin-top:25px;
+    font-weight:800;
+}
+
+.edu-hero p{
+    margin-top:25px;
+    color:#e5e7eb;
+    line-height:1.8;
+    font-size:18px;
+}
+
+.edu-hero-image{
+    text-align:center;
+}
+
+.edu-hero-image img{
+    width:100%;
+    max-width:500px;
+    animation:float 5s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-14px);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+
+
+/* BUTTONS */
+
+.hero-buttons{
+    margin-top:35px;
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.primary-btn,
+.secondary-btn{
+    padding:14px 30px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:700;
+    transition:0.3s;
+}
+
+.primary-btn{
+    background:white;
+    color:#530ef0;
+}
+.secondary-btn{
+    border:2px solid white;
+    color:white;
+}
+
+.secondary-btn:hover{
+    background:white;
+    color:#530ef0;
+}
+
+.primary-btn:hover{
+    transform:translateY(-3px);
+}
+
+
+/* TRUST */
+
+.trust-section{
+    padding:90px 0;
+    text-align:center;
+}
+
+.trust-section h2{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.trust-section p{
+    color:#555;
+    font-size:18px;
+}
+
+
+/* COMMON */
+
+.why-edu,
+.process,
+.features{
+    padding:110px 0;
+    background:#f8fafc;
+}
+
+.section-heading{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.small-title{
+    display:block;
+    color:#530ef0;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    margin-bottom:18px;
+}
+
+.section-heading h2{
+    font-size:46px;
+    line-height:1.2;
+    font-weight:800;
+}
+
+
+/* GRID */
+
+.grid-4{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:30px;
+}
+
+.grid-3{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:35px;
+}
+
+
+/* CARDS */
+
+.card{
+    background:white;
+    padding:40px 30px;
+    border-radius:24px;
+    text-align:center;
+    border:1px solid #e5e7eb;
+    transition:0.35s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(83,14,240,0.12);
+}
+
+.card img{
+    width:80px;
+    height:80px;
+    object-fit:contain;
+    margin:0 auto 25px auto;
+    display:block;
+}
+
+.card h3{
+    font-size:28px;
+    margin-bottom:18px;
+}
+
+.card p{
+    color:#555;
+    line-height:1.7;
+}
+
+
+/* DETAILS */
+
+.edu-details{
+    padding:110px 0;
+    background:white;
+}
+
+.details-wrapper{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:center;
+}
+
+.details-image img{
+    width:100%;
+    max-width:480px;
+}
+
+.details-content h2{
+    font-size:44px;
+    line-height:1.2;
+    margin-bottom:35px;
+}
+
+.detail-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.detail-box{
+    background:#f8fafc;
+    padding:22px;
+    border-radius:18px;
+    font-weight:700;
+    border:1px solid #e5e7eb;
+    transition:0.3s;
+}
+
+.detail-box:hover{
+    background:#530ef0;
+    color:white;
+    transform:translateY(-4px);
+}
+
+
+/* PROCESS */
+
+.step{
+    background:white;
+    padding:40px;
+    border-radius:24px;
+    text-align:center;
+    transition:0.35s;
+}
+
+.step:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(83,14,240,0.12);
+}
+
+.num{
+    width:70px;
+    height:70px;
+    background:#530ef0;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:auto;
+    font-size:24px;
+    font-weight:800;
+    margin-bottom:25px;
+}
+
+.step h3{
+    font-size:28px;
+    margin-bottom:18px;
+}
+
+.step p{
+    color:#555;
+    line-height:1.7;
+}
+
+
+/* FEATURES */
+
+.feature{
+    background:white;
+    border-radius:18px;
+    padding:30px;
+    text-align:center;
+    font-weight:700;
+    border:1px solid #e5e7eb;
+    transition:0.35s;
+    min-height:120px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.feature:hover{
+    transform:translateY(-8px);
+    background:#530ef0;
+    color:white;
+}
+
+
+/* CTA */
+
+.cta{
+    padding:110px 0;
+    background:white;
+}
+
+.cta-box{
+    background:#530ef0;
+    color:white;
+    padding:80px;
+    border-radius:30px;
+    text-align:center;
+}
+
+.cta-text h2{
+    font-size:46px;
+    margin-bottom:20px;
+}
+
+.cta-text p{
+    font-size:18px;
+    color:#e5e7eb;
+    margin-bottom:35px;
+}
+
+.cta-btn{
+    display:inline-block;
+    padding:15px 34px;
+    border-radius:50px;
+    background:white;
+    color:#530ef0;
+    text-decoration:none;
+    font-weight:700;
+    transition:0.3s;
+}
+
+.cta-btn:hover{
+    transform:translateY(-3px);
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+
+    .edu-hero-wrapper,
+    .details-wrapper{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+
+    .edu-hero h1{
+        font-size:42px;
+    }
+
+    .section-heading h2,
+    .details-content h2{
+        font-size:36px;
+    }
+
+    .detail-grid{
+        grid-template-columns:1fr;
+    }
+}
+@media(max-width:768px){
+
+    .edu-hero{
+        padding:100px 0;
+    }
+
+    .edu-hero h1{
+        font-size:34px;
+        line-height:1.2;
+    }
+
+    .edu-hero p{
+        font-size:15px;
+        line-height:1.7;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        gap:12px;
+    }
+
+    .primary-btn,
+    .secondary-btn{
+        width:100%;
+        text-align:center;
+        padding:12px 20px;
+        font-size:14px;
+    }
+
+    /* SECTION HEADINGS */
+
+    .section-heading h2,
+    .details-content h2{
+        font-size:28px;
+        line-height:1.3;
+    }
+
+    .trust-section h2{
+        font-size:24px;
+        line-height:1.4;
+    }
+
+    .trust-section p{
+        font-size:14px;
+    }
+
+    /* WHY EDUCATION GRID */
+
+    .grid-4{
+        grid-template-columns:repeat(2,1fr);
+        gap:15px;
+    }
+
+    .card{
+        padding:20px 15px;
+        border-radius:18px;
+    }
+
+    .card img{
+        width:50px;
+        height:50px;
+        margin-bottom:12px;
+    }
+
+    .card h3{
+        font-size:16px;
+        margin-bottom:10px;
+    }
+
+    .card p{
+        font-size:12px;
+        line-height:1.5;
+    }
+
+    /* DETAILS */
+
+    .detail-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:10px;
+    }
+
+    .detail-box{
+        padding:12px;
+        font-size:12px;
+        border-radius:12px;
+    }
+
+    /* PROCESS */
+
+    .grid-3{
+        grid-template-columns:repeat(2,1fr);
+        gap:15px;
+    }
+
+    .step{
+        padding:20px 15px;
+        border-radius:18px;
+    }
+
+    .num{
+        width:45px;
+        height:45px;
+        font-size:16px;
+        margin-bottom:12px;
+    }
+
+    .step h3{
+        font-size:15px;
+        margin-bottom:8px;
+    }
+
+    .step p{
+        font-size:12px;
+        line-height:1.5;
+    }
+
+    /* FEATURES */
+
+    .feature{
+        min-height:80px;
+        padding:15px;
+        font-size:13px;
+        border-radius:14px;
+    }
+
+    /* CTA */
+
+    .cta-text h2{
+        font-size:26px;
+        line-height:1.3;
+    }
+
+    .cta-text p{
+        font-size:14px;
+    }
+
+    .cta-box{
+        padding:40px 20px;
+    }
+
+    .cta-btn{
+        width:100%;
+        text-align:center;
+        padding:12px 20px;
+        font-size:14px;
+    }
+
+    /* HERO IMAGE */
+
+    .edu-hero-image img{
+        max-width:280px;
+        margin:auto;
+    }
+
+    /* DETAILS IMAGE */
+
+    .details-image img{
+        max-width:260px;
+        margin:auto;
+    }
+
+    /* VIDEO */
+
+    .video-strip-section{
+        height:70px;
+    }
+}
+</style>
+
+{% endblock %}

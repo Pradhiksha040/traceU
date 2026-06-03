@@ -1,0 +1,818 @@
+{% extends 'landing-layout.html' %}
+{% load static %}
+
+{% block title %}Face Match Verification | TraceU{% endblock %}
+
+{% block icon %}
+<link rel="shortcut icon"
+      href="{% static 'img/icons/favicon.png' %}"
+      type="image/x-icon">
+{% endblock icon %}
+
+{% block page_content %}
+
+<!-- HERO SECTION -->
+
+<section class="face-hero">
+
+    <div class="hero-glow glow1"></div>
+    <div class="hero-glow glow2"></div>
+
+    <div class="container">
+
+        <div class="hero-wrapper">
+
+            <div class="hero-content">
+
+                <span class="hero-tag">
+                    AI Powered Face Match Verification
+                </span>
+
+                <h1>
+                    Secure Facial Identity
+                    Verification for
+                    Faster Hiring
+                </h1>
+
+                <p>
+                    Instantly match candidate selfies with government-issued
+                    identity documents using AI-powered biometric verification
+                    and advanced fraud detection systems.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="/contact/" class="primary-btn">
+                        Get A Quote
+                    </a>
+
+                    <a href="#features" class="secondary-btn">
+                        See How It Works
+                    </a>
+
+                </div>
+
+                <div class="hero-note">
+                    Trusted by leading companies for secure and accurate
+                    biometric identity verification.
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+
+                <img
+                src="{% static 'img/global/face.jpeg' %}"
+                alt="Face match verification dashboard showing real-time results and insights"  
+                >
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- TRUSTED SECTION -->
+
+<section class="trusted-section">
+
+    <div class="container">
+
+        <div class="section-header center">
+
+            <span>Trusted by Leading Companies</span>
+
+            <h2>
+                Helping businesses make smarter and safer hiring decisions
+            </h2>
+
+            <p>
+                Our AI-powered face match verification platform enables
+                organizations to validate candidate identities securely
+                and eliminate onboarding fraud.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- VIDEO -->
+
+<!-- FEATURES -->
+
+<section class="features-section" id="features">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span>What’s Inside Our Verification Platform?</span>
+
+            <h2>
+                Smart Biometric Verification Features
+            </h2>
+
+            <p>
+                Advanced face recognition technology combined with
+                fraud prevention systems for secure onboarding.
+            </p>
+
+        </div>
+
+        <div class="features-grid">
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-face-smile"></i>
+                </div>
+
+                <h3>AI Face Matching</h3>
+
+                <p>
+                    Match candidate selfies with uploaded identity
+                    documents using intelligent facial recognition.
+                </p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-camera"></i>
+                </div>
+
+                <h3>Live Selfie Verification</h3>
+
+                <p>
+                    Capture real-time selfies and verify authenticity
+                    through biometric liveness detection.
+                </p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+
+                <h3>Fraud Detection</h3>
+
+                <p>
+                    Detect spoofing attempts, edited images,
+                    deepfakes, and fake identity submissions.
+                </p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+
+                <h3>Instant Verification</h3>
+
+                <p>
+                    Receive real-time face match verification
+                    reports within seconds.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- VIDEO STRIP -->
+{% include 'partials/marquee.html' %}
+
+<!-- PROCESS SECTION -->
+
+<section class="process-section">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span>Verification Process</span>
+
+            <h2>Simple & Secure Face Match Workflow</h2>
+
+        </div>
+
+        <div class="process-grid">
+
+            <div class="process-card">
+
+                <div class="step">01</div>
+
+                <h3>Upload ID</h3>
+
+                <p>
+                    Candidate uploads government-issued ID proof.
+                </p>
+
+            </div>
+
+            <div class="process-card">
+
+                <div class="step">02</div>
+
+                <h3>Capture Selfie</h3>
+
+                <p>
+                    Candidate takes a live selfie for biometric validation.
+                </p>
+
+            </div>
+
+            <div class="process-card">
+
+                <div class="step">03</div>
+
+                <h3>AI Face Analysis</h3>
+
+                <p>
+                    System compares both images using facial recognition AI.
+                </p>
+
+            </div>
+
+            <div class="process-card">
+
+                <div class="step">04</div>
+
+                <h3>Verification Complete</h3>
+
+                <p>
+                    Accurate verification report generated instantly.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- BENEFITS -->
+
+<section class="benefits-section">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span>Why Choose TraceU?</span>
+
+            <h2>
+                Enterprise Grade Face Verification
+            </h2>
+
+        </div>
+
+        <div class="benefits-grid">
+
+            <div class="benefit-card">
+
+                <i class="fa-solid fa-user-shield"></i>
+
+                <h3>Enhanced Security</h3>
+
+                <p>
+                    Prevent identity fraud and fake onboarding attempts.
+                </p>
+
+            </div>
+
+            <div class="benefit-card">
+
+                <i class="fa-solid fa-clock"></i>
+
+                <h3>Faster Hiring</h3>
+
+                <p>
+                    Reduce manual verification time with automation.
+                </p>
+
+            </div>
+
+            <div class="benefit-card">
+
+                <i class="fa-solid fa-globe"></i>
+
+                <h3>Scalable Verification</h3>
+
+                <p>
+                    Verify candidates securely across multiple regions.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="cta-section">
+
+    <div class="container">
+
+        <div class="cta-box">
+
+            <h2>
+                Start Verifying Candidates Today
+            </h2>
+
+            <p>
+                Make smarter hiring decisions with secure AI-powered
+                biometric verification.
+            </p>
+
+            <form class="cta-form">
+
+                <input
+                    type="email"
+                    placeholder="Enter your work email"
+                >
+
+                <button type="submit">
+                    Request Demo
+                </button>
+
+            </form>
+
+            <span>
+                No spam. No commitment. Just a quick demo to get started.
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<style>
+
+.face-hero{
+    padding:160px 0 120px;
+    background:linear-gradient(
+        135deg,
+        #0f172a 0%,
+        #1d4ed8 50%,
+        #2563eb 100%
+    );
+    position:relative;
+    overflow:hidden;
+    color:white;
+}
+
+.hero-glow{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(80px);
+}
+
+.glow1{
+    width:350px;
+    height:350px;
+    background:rgba(255,255,255,0.08);
+    top:-100px;
+    right:-100px;
+}
+
+.glow2{
+    width:300px;
+    height:300px;
+    background:rgba(37,99,235,0.3);
+    bottom:-100px;
+    left:-100px;
+}
+
+.hero-wrapper{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+}
+
+.hero-content{
+    flex:1;
+    position:relative;
+    z-index:2;
+}
+
+.hero-image{
+    flex:1;
+    text-align:center;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:520px;
+}
+
+.hero-tag{
+    display:inline-block;
+    padding:12px 24px;
+    border-radius:40px;
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(12px);
+    margin-bottom:28px;
+    font-size:14px;
+    font-weight:600;
+}
+
+.face-hero h1{
+    font-size:68px;
+    line-height:1.1;
+    margin-bottom:28px;
+}
+
+.face-hero p{
+    font-size:21px;
+    line-height:1.9;
+    color:#dbeafe;
+    margin-bottom:40px;
+    max-width:720px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:20px;
+    margin-bottom:30px;
+}
+
+.primary-btn{
+    background:white;
+    color:#2563eb;
+    padding:16px 36px;
+    border-radius:14px;
+    text-decoration:none;
+    font-weight:700;
+    transition:0.3s;
+}
+
+.primary-btn:hover{
+    transform:translateY(-3px);
+}
+
+.secondary-btn{
+    border:1px solid rgba(255,255,255,0.4);
+    color:white;
+    padding:16px 36px;
+    border-radius:14px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.hero-note{
+    color:#bfdbfe;
+    font-size:17px;
+}
+
+/* SECTIONS */
+
+.trusted-section,
+.features-section,
+.process-section,
+.benefits-section{
+    padding:120px 0;
+    background:#f8fafc;
+}
+
+.section-header{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.section-header span{
+    color:#2563eb;
+    font-weight:600;
+    font-size:18px;
+}
+
+.section-header h2{
+    font-size:54px;
+    margin:20px 0;
+    color:#111827;
+}
+
+.section-header p{
+    max-width:760px;
+    margin:auto;
+    line-height:1.8;
+    color:#6b7280;
+    font-size:18px;
+}
+
+/* GRID */
+
+.features-grid,
+.process-grid,
+.benefits-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.feature-card,
+.process-card,
+.benefit-card{
+    background:white;
+    padding:40px;
+    border-radius:24px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.06);
+    transition:0.3s;
+}
+
+.feature-card:hover,
+.process-card:hover,
+.benefit-card:hover{
+    transform:translateY(-8px);
+}
+
+
+.feature-icon{
+    width:80px;
+    height:80px;
+    background:#eff6ff;
+    color:#2563eb;
+    border-radius:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:32px;
+    margin:0 auto 25px;
+}
+
+
+.feature-card h3,
+.process-card h3,
+.benefit-card h3{
+    font-size:28px;
+    margin-bottom:18px;
+    color:#1e3a8a;
+}
+
+.feature-card p,
+.process-card p,
+.benefit-card p{
+    color:#6b7280;
+    line-height:1.8;
+}
+
+.step{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#2563eb;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:700;
+    margin-bottom:25px;
+}
+
+.benefit-card{
+    text-align:center;
+}
+
+.benefit-card i{
+    font-size:42px;
+    color:#2563eb;
+    margin-bottom:25px;
+}
+
+/* VIDEO */
+
+
+/* CTA */
+
+.cta-section{
+    padding:120px 0;
+    background:#0f172a;
+}
+
+.cta-box{
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+    padding:80px;
+    border-radius:32px;
+    text-align:center;
+    color:white;
+}
+
+.cta-box h2{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.cta-box p{
+    font-size:18px;
+    margin-bottom:35px;
+}
+
+.cta-form{
+    display:flex;
+    gap:15px;
+    justify-content:center;
+    margin-bottom:18px;
+    flex-wrap:wrap;
+}
+
+.cta-form input{
+    width:360px;
+    padding:18px 22px;
+    border:none;
+    border-radius:14px;
+    outline:none;
+}
+
+.cta-form button{
+    padding:18px 32px;
+    border:none;
+    border-radius:14px;
+    background:white;
+    color:#2563eb;
+    font-weight:700;
+    cursor:pointer;
+}
+.secondary-btn{
+    border:1px solid rgba(255,255,255,0.4);
+    color:white;
+    padding:16px 36px;
+    border-radius:14px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s ease; 
+}
+
+.secondary-btn:hover{
+    color: rgb(65, 225, 86);
+    border-color: rgb(65, 225, 86);
+}
+/* RESPONSIVE */
+
+@media(max-width:991px){
+
+    .hero-wrapper{
+        flex-direction:column;
+    }
+
+    .face-hero h1{
+        font-size:48px;
+    }
+
+    .section-header h2{
+        font-size:38px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .face-hero{
+        padding:120px 0 90px;
+    }
+
+    .face-hero h1{
+        font-size:34px;
+        line-height:1.2;
+    }
+
+    .face-hero p{
+        font-size:16px;
+        line-height:1.7;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+    }
+
+    .section-header h2{
+        font-size:28px;
+        line-height:1.3;
+    }
+
+    .section-header p{
+        font-size:15px;
+    }
+
+    /* 2 CARDS PER ROW */
+
+    .features-grid,
+    .process-grid,
+    .benefits-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:12px;
+    }
+
+    /* SMALLER CARDS */
+
+    .feature-card,
+    .process-card,
+    .benefit-card{
+        padding:18px 12px;
+        border-radius:16px;
+    }
+
+    /* SMALLER ICONS */
+
+    .feature-icon{
+        width:50px;
+        height:50px;
+        font-size:20px;
+        margin:0 auto 12px;
+        border-radius:12px;
+    }
+
+    .benefit-card i{
+        font-size:24px;
+        margin-bottom:12px;
+    }
+
+    /* SMALLER HEADINGS */
+
+    .feature-card h3,
+    .process-card h3,
+    .benefit-card h3{
+        font-size:16px;
+        line-height:1.3;
+        margin-bottom:8px;
+    }
+
+    /* SMALLER PARAGRAPHS */
+
+    .feature-card p,
+    .process-card p,
+    .benefit-card p{
+        font-size:13px;
+        line-height:1.5;
+    }
+
+    /* SMALLER STEP CIRCLE */
+
+    .step{
+        width:40px;
+        height:40px;
+        font-size:13px;
+        margin-bottom:10px;
+    }
+
+    /* CTA */
+
+    .cta-box{
+        padding:40px 20px;
+    }
+
+    .cta-box h2{
+        font-size:28px;
+        line-height:1.3;
+    }
+
+    .cta-box p{
+        font-size:14px;
+    }
+
+    .cta-form{
+        flex-direction:column;
+    }
+
+    .cta-form input{
+        width:100%;
+        padding:14px 16px;
+        font-size:14px;
+    }
+
+    .cta-form button{
+        width:100%;
+        padding:14px;
+        font-size:14px;
+    }
+
+    .cta-box span{
+        font-size:12px;
+    }
+
+    /* VIDEO */
+
+    .video-strip-section{
+        height:70px;
+    }
+}
+
+</style>
+
+{% endblock %}
