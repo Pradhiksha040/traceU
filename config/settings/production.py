@@ -10,6 +10,10 @@ ALLOWED_HOSTS = env.list(
     default=["traceu-app.onrender.com", ".onrender.com"]
 )
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://traceu-app.onrender.com"
+]
+
 DEBUG = False
 
 # DATABASE
